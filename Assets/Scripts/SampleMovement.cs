@@ -8,6 +8,7 @@ public class SampleMovement : MonoBehaviour
     int current = 0;
     float rotSpeed;
     public float speed;
+    public Transform[] target;
     float WPradius = 1;
 
     void Update()
@@ -20,6 +21,11 @@ public class SampleMovement : MonoBehaviour
                 current = 0;
             }
         }
+
+        Vector3 direction = target[current].position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(direction);
+
         transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * speed);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, speed * Time.deltaTime);
     }
 }
