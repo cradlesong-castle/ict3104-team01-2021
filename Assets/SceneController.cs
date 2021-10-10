@@ -11,6 +11,9 @@ public class SceneController : MonoBehaviour
     [Header("Crossings")]
     public GameObject[] crossingTrafficLight;
     public GameObject[] crossingZebra;
+    [Header("Direction Arrows")]
+    public GameObject[] arrowsUni;
+    public GameObject[] arrowsBi;
 
     /*
      * This controls the presence of intersections
@@ -39,11 +42,25 @@ public class SceneController : MonoBehaviour
      */
     public void SwitchDirectionUni()
     {
-
+        foreach (var arrow in arrowsUni)
+        {
+            arrow.SetActive(true);
+        }
+        foreach (var arrow in arrowsBi)
+        {
+            arrow.SetActive(false);
+        }
     }
     public void SwitchDirectionBi()
     {
-
+        foreach (var arrow in arrowsBi)
+        {
+            arrow.SetActive(true);
+        }
+        foreach (var arrow in arrowsUni)
+        {
+            arrow.SetActive(false);
+        }
     }
 
     /*
