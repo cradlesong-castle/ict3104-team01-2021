@@ -38,9 +38,5 @@ public class TrafficlightButton : MonoBehaviour
     void Update()
     {
         //Input.GetKeyDown(KeyCode.F)
-        if (isPlayerInZone && OVRInput.)           //if in zone and press F key
-        {
-            lightsright[0].SetActive(true);
-        }
     }
 }
