@@ -1,17 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
 
+    public GameObject startingText;
+    [Header("Waypoints")]  /*
+       * List of routes
+       0 = bottom to top
+       1 = bottom to right
+       2 = bottom to left
 
-    [Header("Waypoints")]
-    public GameObject leftwaypoint;
-    public GameObject rightwaypoint;
+       direction is always from the perspective of the player spawn point
+       */
+    public GameObject[] waypoints;
+
     [Header("Car")]
     public GameObject driverCar;
     public GameObject driverlessCar;
+
     [Header("Intersections")]
     public GameObject intersectionNone;
     public GameObject intersectionT;
@@ -25,6 +34,20 @@ public class SceneController : MonoBehaviour
 
     private GameObject selectedCar;
     private bool isDriverless = false;
+
+    //press count keeps track of whether its the start or end
+    private int pressCount = 0;
+    /*
+     * the integer represents what is the waypoint Start
+     0 = bottom
+     1 = left
+     2 = right
+     3 = top
+
+     direction is always from the perspective of the player spawn point
+     */
+    private int direction = 0;
+
     /*
      * This controls the presence of intersections
      */
@@ -60,26 +83,6 @@ public class SceneController : MonoBehaviour
         selectedCar = driverCar;
         isDriverless = false;
       }
-    }
-    public void SpawnBottomDriver()
-    {
-      Spawn(selectedCar,leftwaypoint);
-    }
-
-    public void SpawnRightDriver()
-    {
-      Spawn(selectedCar,rightwaypoint);
-    }
-
-    public void SpawnBottomDriverless()
-    {
-      Spawn(selectedCar,leftwaypoint);
-    }
-
-    public void SpawnRightDriverless()
-    {
-
-      Spawn(selectedCar,rightwaypoint);
     }
     /*
      * This controls uni-bidirection streets
@@ -141,4 +144,103 @@ public class SceneController : MonoBehaviour
        obj.GetComponent<WaypointNavigator>().currentWaypoint = child.GetComponent<Waypoint>();
        obj.transform.position = child.position;
     }
+
+    public void SpawnLeftDriver(){
+      print("Click Left");
+      if (pressCount==0){
+        direction = 1;
+        pressCount+=1;
+        startingText.GetComponent<Text>().text = "Start from Left";
+      }
+      else{
+        pressCount = 0;
+        switch(direction)
+        {
+          case 0:
+            Spawn(selectedCar,waypoints[2]);
+            startingText.GetComponent<Text>().text = "None Selected";
+            break;
+          case 1:
+            Spawn(selectedCar,waypoints[0]);
+            startingText.GetComponent<Text>().text = "None Selected";
+            break;
+
+        }
+      }
+    }
+
+    public void SpawnRightDriver(){
+      print("Click Right");
+      if (pressCount==0){
+        direction = 2;
+        pressCount+=1;
+        startingText.GetComponent<Text>().text = "Start from Right";
+      }
+      else{
+        pressCount = 0;
+        switch(direction)
+        {
+          case 0:
+            Spawn(selectedCar,waypoints[1]);
+            startingText.GetComponent<Text>().text = "None Selected";
+            break;
+          case 1:
+            startingText.GetComponent<Text>().text = "None Selected";
+            //Spawn(selectedCar,waypoints[0]);
+            break;
+
+        }
+      }
+    }
+    public void SpawnTopDriver(){
+      print("Click Top");
+
+        if (pressCount==0){
+          direction = 3;
+          pressCount+=1;
+          startingText.GetComponent<Text>().text = "Start from Top";
+        }
+        else{
+          pressCount = 0;
+          switch(direction)
+          {
+            case 0:
+              Spawn(selectedCar,waypoints[0]);
+              startingText.GetComponent<Text>().text = "None Selected";
+              break;
+            case 1:
+              startingText.GetComponent<Text>().text = "None Selected";
+              //Spawn(selectedCar,waypoints[1]);
+              break;
+
+          }
+        }
+    }
+
+    public void SpawnBottomDriver()
+    {
+      print("Click Bottom");
+      if (pressCount==0){
+        direction = 0;
+        pressCount+=1;
+        startingText.GetComponent<Text>().text = "Start from Bottom";
+      }
+      else{
+        pressCount = 0;
+        switch(direction)
+        {
+          case 0:
+            Spawn(selectedCar,waypoints[0]);
+            startingText.GetComponent<Text>().text = "None Selected";
+            break;
+          case 1:
+            //Spawn(selectedCar,waypoints[1]);
+            startingText.GetComponent<Text>().text = "None Selected";
+            break;
+
+        }
+      }
+    }
+
+
 }

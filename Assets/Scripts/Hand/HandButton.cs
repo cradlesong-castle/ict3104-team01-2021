@@ -83,7 +83,6 @@ public class HandButton : XRBaseInteractable
 
       }
       else{
-          print(pedTime);
           pedTime += Time.deltaTime;
 
           if (pedTime>= greenLight && pedTime < amberLight)

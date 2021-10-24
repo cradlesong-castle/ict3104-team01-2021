@@ -9,8 +9,8 @@ public class Waypoint : MonoBehaviour
     public Waypoint nextWaypoint;
 
     [Range(0f, 4f)]
-    public float width = 3.5f;
-    
+    public float width = 1.6f;
+
     public Vector3 GetPosition()
     {
 
