@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WaypointNavigator : MonoBehaviour
 {
+
+    public GameObject car;
     CarController controller;
     public Waypoint currentWaypoint;
     private void Awake()
@@ -21,8 +23,14 @@ public class WaypointNavigator : MonoBehaviour
     {
         if (controller.reachedDestination)
         {
-            currentWaypoint = currentWaypoint.nextWaypoint;
-            controller.SetDestination(currentWaypoint.GetPosition());
+            if (currentWaypoint.nextWaypoint != null){
+              currentWaypoint = currentWaypoint.nextWaypoint;
+              controller.SetDestination(currentWaypoint.GetPosition());
+
+            }
+            else{
+              Destroy(car);
+            }
 
         }
     }

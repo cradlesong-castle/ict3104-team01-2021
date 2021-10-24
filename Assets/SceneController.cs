@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour
 {
+
+
+
+    [Header("Waypoints")]
+    public GameObject leftwaypoint;
+    public GameObject rightwaypoint;
+    [Header("Car")]
+    public GameObject driverCar;
+    public GameObject driverlessCar;
     [Header("Intersections")]
     public GameObject intersectionNone;
     public GameObject intersectionT;
@@ -37,6 +46,26 @@ public class SceneController : MonoBehaviour
         intersectionT.SetActive(false);
     }
 
+    public void SpawnBottomDriver()
+    {
+      Spawn(driverCar,leftwaypoint);
+    }
+
+    public void SpawnRightDriver()
+    {
+      Spawn(driverCar,rightwaypoint);
+    }
+
+    public void SpawnBottomDriverless()
+    {
+      Spawn(driverlessCar,leftwaypoint);
+    }
+
+    public void SpawnRightDriverless()
+    {
+
+      Spawn(driverlessCar,rightwaypoint);
+    }
     /*
      * This controls uni-bidirection streets
      */
@@ -87,5 +116,14 @@ public class SceneController : MonoBehaviour
         {
             tile.SetActive(false);
         }
+    }
+
+    public void Spawn(GameObject carPrefab, GameObject waypoint)
+    {
+
+       GameObject obj = Instantiate(carPrefab);
+       Transform child = waypoint.transform.GetChild(0);
+       obj.GetComponent<WaypointNavigator>().currentWaypoint = child.GetComponent<Waypoint>();
+       obj.transform.position = child.position;
     }
 }
