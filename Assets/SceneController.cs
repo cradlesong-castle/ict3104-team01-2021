@@ -12,6 +12,9 @@ public class SceneController : MonoBehaviour
        0 = bottom to top
        1 = bottom to right
        2 = bottom to left
+       3 = left to right
+       4 = left to bottom
+       5 = left to top
 
        direction is always from the perspective of the player spawn point
        */
@@ -145,6 +148,15 @@ public class SceneController : MonoBehaviour
        obj.transform.position = child.position;
     }
 
+    /*
+     * the integer represents what is the waypoint Start
+     0 = bottom
+     1 = left
+     2 = right
+     3 = top
+
+     direction is always from the perspective of the player spawn point
+     */
     public void SpawnLeftDriver(){
       print("Click Left");
       if (pressCount==0){
@@ -161,7 +173,6 @@ public class SceneController : MonoBehaviour
             startingText.GetComponent<Text>().text = "None Selected";
             break;
           case 1:
-            Spawn(selectedCar,waypoints[0]);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
 
@@ -180,11 +191,14 @@ public class SceneController : MonoBehaviour
         pressCount = 0;
         switch(direction)
         {
+        //case 0: bottom to right
           case 0:
             Spawn(selectedCar,waypoints[1]);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
+            //case 1: left to right
           case 1:
+            Spawn(selectedCar,waypoints[3]);
             startingText.GetComponent<Text>().text = "None Selected";
             //Spawn(selectedCar,waypoints[0]);
             break;
@@ -204,11 +218,14 @@ public class SceneController : MonoBehaviour
           pressCount = 0;
           switch(direction)
           {
+          //case 0: bottom to top
             case 0:
               Spawn(selectedCar,waypoints[0]);
               startingText.GetComponent<Text>().text = "None Selected";
               break;
+              //case 1: left to top
             case 1:
+              Spawn(selectedCar,waypoints[5]);
               startingText.GetComponent<Text>().text = "None Selected";
               //Spawn(selectedCar,waypoints[1]);
               break;
@@ -229,12 +246,9 @@ public class SceneController : MonoBehaviour
         pressCount = 0;
         switch(direction)
         {
-          case 0:
-            Spawn(selectedCar,waypoints[0]);
-            startingText.GetComponent<Text>().text = "None Selected";
-            break;
+            //case 1: left to bottom
           case 1:
-            //Spawn(selectedCar,waypoints[1]);
+            Spawn(selectedCar,waypoints[4]);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
 
