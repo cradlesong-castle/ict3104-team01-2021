@@ -50,7 +50,6 @@ public class HandButton : XRBaseInteractable
     void Update()
     {
       if (!isPed){
-          print("normal");
         time += Time.deltaTime;
         if (time>= greenLight && time < amberLight)
         {
@@ -104,11 +103,8 @@ public class HandButton : XRBaseInteractable
               lights[2].SetActive(true);
               lights[3].SetActive(true);
 
-
           }
           else{
-
-                print("ped end");
             lights[0].SetActive(true);
             lights[3].SetActive(false);
             lights[4].SetActive(false);

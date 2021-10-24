@@ -6,7 +6,6 @@ public class SceneController : MonoBehaviour
 {
 
 
-
     [Header("Waypoints")]
     public GameObject leftwaypoint;
     public GameObject rightwaypoint;
@@ -24,9 +23,14 @@ public class SceneController : MonoBehaviour
     public GameObject[] arrowsUni;
     public GameObject[] arrowsBi;
 
+    private GameObject selectedCar;
+    private bool isDriverless = false;
     /*
      * This controls the presence of intersections
      */
+    void Start(){
+      selectedCar = driverCar;
+    }
     public void SwitchIntersectionNone()
     {
         intersectionNone.SetActive(true);
@@ -46,25 +50,36 @@ public class SceneController : MonoBehaviour
         intersectionT.SetActive(false);
     }
 
+    public void ChangeCarType(){
+      if (!isDriverless){
+        selectedCar = driverlessCar;
+        isDriverless = true;
+      }
+      else{
+
+        selectedCar = driverCar;
+        isDriverless = false;
+      }
+    }
     public void SpawnBottomDriver()
     {
-      Spawn(driverCar,leftwaypoint);
+      Spawn(selectedCar,leftwaypoint);
     }
 
     public void SpawnRightDriver()
     {
-      Spawn(driverCar,rightwaypoint);
+      Spawn(selectedCar,rightwaypoint);
     }
 
     public void SpawnBottomDriverless()
     {
-      Spawn(driverlessCar,leftwaypoint);
+      Spawn(selectedCar,leftwaypoint);
     }
 
     public void SpawnRightDriverless()
     {
 
-      Spawn(driverlessCar,rightwaypoint);
+      Spawn(selectedCar,rightwaypoint);
     }
     /*
      * This controls uni-bidirection streets
