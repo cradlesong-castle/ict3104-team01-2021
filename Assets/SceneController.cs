@@ -7,7 +7,6 @@ public class SceneController : MonoBehaviour
 {
 
     public GameObject startingText;
-    public GameObject driverText;
     [Header("Waypoints")]  /*
        * List of routes
 
@@ -27,8 +26,7 @@ public class SceneController : MonoBehaviour
 
     [Header("Car")]
     public GameObject driverCar;
-    public GameObject driverlessCar; // This line can be removed
-    public GameObject driverModel;
+    public GameObject driverlessCar;
 
     [Header("Intersections")]
     public GameObject intersectionNone;
@@ -86,16 +84,12 @@ public class SceneController : MonoBehaviour
       if (!isDriverless){
         selectedCar = driverlessCar;
         isDriverless = true;
-        driverText.GetComponent<Text>().text = "Driverless";
-        driverModel.SetActive(false);
-        }
+      }
       else{
 
         selectedCar = driverCar;
         isDriverless = false;
-        driverText.GetComponent<Text>().text = "Driver";
-        driverModel.SetActive(true);
-        }
+      }
     }
     /*
      * This controls uni-bidirection streets
@@ -149,10 +143,28 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    public void Spawn(GameObject carPrefab, GameObject waypoint)
+    public void Spawn(GameObject carPrefab, GameObject waypoint, int direction)
     {
 
        GameObject obj = Instantiate(carPrefab);
+       switch(direction){
+         case 0:
+           print("rotate bottom");
+           obj.transform.rotation =  Quaternion.Euler(Vector3.down * 270);
+         break;
+         case 1:
+           print("rotate left");
+           obj.transform.rotation =  Quaternion.Euler(Vector3.down * 180);
+         break;
+         case 2:
+           print("rotate right");
+           obj.transform.rotation =  Quaternion.Euler(Vector3.down * 0);
+         break;
+         case 3:
+           print("rotate top");
+           obj.transform.rotation =  Quaternion.Euler(Vector3.down * 90);
+         break;
+       }
        Transform child = waypoint.transform.GetChild(0);
        obj.GetComponent<WaypointNavigator>().currentWaypoint = child.GetComponent<Waypoint>();
        obj.transform.position = child.position;
@@ -180,17 +192,17 @@ public class SceneController : MonoBehaviour
         {
         //case 0: bottom to left
           case 0:
-            Spawn(selectedCar,waypoints[2]);
+            Spawn(selectedCar,waypoints[2],direction);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
           //case 2: right to left
           case 2:
-            Spawn(selectedCar,waypoints[11]);
+            Spawn(selectedCar,waypoints[11],direction);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
           //case 3: top to left
           case 3:
-            Spawn(selectedCar,waypoints[7]);
+            Spawn(selectedCar,waypoints[7],direction);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
 
@@ -211,17 +223,17 @@ public class SceneController : MonoBehaviour
         {
         //case 0: bottom to right
           case 0:
-            Spawn(selectedCar,waypoints[1]);
+            Spawn(selectedCar,waypoints[1],direction);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
             //case 1: left to right
           case 1:
-            Spawn(selectedCar,waypoints[3]);
+            Spawn(selectedCar,waypoints[3],direction);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
           //case 3: top to right
           case 3:
-            Spawn(selectedCar,waypoints[8]);
+            Spawn(selectedCar,waypoints[8],direction);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
 
@@ -242,18 +254,18 @@ public class SceneController : MonoBehaviour
           {
           //case 0: bottom to top
             case 0:
-              Spawn(selectedCar,waypoints[0]);
+              Spawn(selectedCar,waypoints[0],direction);
               startingText.GetComponent<Text>().text = "None Selected";
               break;
               //case 1: left to top
             case 1:
-              Spawn(selectedCar,waypoints[5]);
+              Spawn(selectedCar,waypoints[5],direction);
               startingText.GetComponent<Text>().text = "None Selected";
               //Spawn(selectedCar,waypoints[1]);
               break;
             //case 2: right to top
             case 2:
-              Spawn(selectedCar,waypoints[10]);
+              Spawn(selectedCar,waypoints[10],direction);
               startingText.GetComponent<Text>().text = "None Selected";
               break;
 
@@ -275,17 +287,17 @@ public class SceneController : MonoBehaviour
         {
             //case 1: left to bottom
           case 1:
-            Spawn(selectedCar,waypoints[4]);
+            Spawn(selectedCar,waypoints[4],direction);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
           //case 2: right to bottom
           case 2:
-            Spawn(selectedCar,waypoints[9]);
+            Spawn(selectedCar,waypoints[9],direction);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
           //case 3: top to bottom
           case 3:
-            Spawn(selectedCar,waypoints[6]);
+            Spawn(selectedCar,waypoints[6],direction);
             startingText.GetComponent<Text>().text = "None Selected";
             break;
 
