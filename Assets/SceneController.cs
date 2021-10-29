@@ -7,6 +7,7 @@ public class SceneController : MonoBehaviour
 {
 
     public GameObject startingText;
+    public GameObject driverText;
     [Header("Waypoints")]  /*
        * List of routes
 
@@ -27,6 +28,8 @@ public class SceneController : MonoBehaviour
     [Header("Car")]
     public GameObject driverCar;
     public GameObject driverlessCar;
+    public GameObject driverModel;
+
 
     [Header("Intersections")]
     public GameObject intersectionNone;
@@ -84,12 +87,16 @@ public class SceneController : MonoBehaviour
       if (!isDriverless){
         selectedCar = driverlessCar;
         isDriverless = true;
-      }
+        driverText.GetComponent<Text>().text = "Driverless";
+        driverModel.SetActive(false);
+        }
       else{
 
         selectedCar = driverCar;
         isDriverless = false;
-      }
+        driverText.GetComponent<Text>().text = "Driver";
+        driverModel.SetActive(true);
+        }
     }
     /*
      * This controls uni-bidirection streets

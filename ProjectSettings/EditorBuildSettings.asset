@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/IT20-Ian.unity
     guid: 6cbad6e131d520b4491f6f04b828589e
+  - enabled: 1
+    path: Assets/Scenes/MainScene - MultiScreen.unity
+    guid: 2a43d3c1835fbb641960ca33d5ca57aa
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
