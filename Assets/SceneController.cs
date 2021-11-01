@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,6 @@ using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
-
     public GameObject startingText;
     public GameObject driverText;
     [Header("Waypoints")]  /*
@@ -62,22 +62,26 @@ public class SceneController : MonoBehaviour
      * This controls the presence of intersections
      */
     void Start(){
-      selectedCar = driverCar;
+        selectedCar = driverCar;
+        writeToCSV("Simulation Program", "Scene Starting.");
     }
     public void SwitchIntersectionNone()
     {
+        writeToCSV("Intersection Change", "Intersection changed to none.");
         intersectionNone.SetActive(true);
         intersectionT.SetActive(false);
         intersectionX.SetActive(false);
     }
     public void SwitchIntersectionT()
     {
+        writeToCSV("Intersection Change", "Intersection changed to T shape.");
         intersectionT.SetActive(true);
         intersectionNone.SetActive(false);
         intersectionX.SetActive(false);
     }
     public void SwitchIntersectionX()
     {
+        writeToCSV("Intersection Change", "Intersection changed to cross (X) shape.");
         intersectionX.SetActive(true);
         intersectionNone.SetActive(false);
         intersectionT.SetActive(false);
@@ -89,6 +93,7 @@ public class SceneController : MonoBehaviour
         isDriverless = true;
         driverText.GetComponent<Text>().text = "Driverless";
         driverModel.SetActive(false);
+        writeToCSV("Vehicle", "Car changed to driverless car.");
         }
       else{
 
@@ -96,6 +101,7 @@ public class SceneController : MonoBehaviour
         isDriverless = false;
         driverText.GetComponent<Text>().text = "Driver";
         driverModel.SetActive(true);
+        writeToCSV("Vehicle", "Car changed to normal driver car.");
         }
     }
     /*
@@ -153,7 +159,8 @@ public class SceneController : MonoBehaviour
     public void Spawn(GameObject carPrefab, GameObject waypoint, int direction)
     {
 
-       GameObject obj = Instantiate(carPrefab);
+        writeToCSV("Vehicle", "Car spawned.");
+        GameObject obj = Instantiate(carPrefab);
        switch(direction){
          case 0:
            print("rotate bottom");
@@ -201,16 +208,19 @@ public class SceneController : MonoBehaviour
           case 0:
             Spawn(selectedCar,waypoints[2],direction);
             startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from bottom road to left.");
             break;
           //case 2: right to left
           case 2:
             Spawn(selectedCar,waypoints[11],direction);
             startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from bottom right to left.");
             break;
           //case 3: top to left
           case 3:
             Spawn(selectedCar,waypoints[7],direction);
             startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from bottom top to left.");
             break;
 
         }
@@ -232,16 +242,19 @@ public class SceneController : MonoBehaviour
           case 0:
             Spawn(selectedCar,waypoints[1],direction);
             startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from bottom to right.");
             break;
             //case 1: left to right
           case 1:
             Spawn(selectedCar,waypoints[3],direction);
             startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from left to right.");
             break;
           //case 3: top to right
           case 3:
             Spawn(selectedCar,waypoints[8],direction);
             startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from bottom top to right.");
             break;
 
         }
@@ -263,17 +276,20 @@ public class SceneController : MonoBehaviour
             case 0:
               Spawn(selectedCar,waypoints[0],direction);
               startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from bottom to top.");
               break;
               //case 1: left to top
             case 1:
               Spawn(selectedCar,waypoints[5],direction);
               startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from left to top.");
               //Spawn(selectedCar,waypoints[1]);
               break;
             //case 2: right to top
             case 2:
               Spawn(selectedCar,waypoints[10],direction);
               startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from right to top.");
               break;
 
           }
@@ -296,20 +312,40 @@ public class SceneController : MonoBehaviour
           case 1:
             Spawn(selectedCar,waypoints[4],direction);
             startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from left to bottom.");
             break;
           //case 2: right to bottom
           case 2:
             Spawn(selectedCar,waypoints[9],direction);
             startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from right to bottom.");
             break;
           //case 3: top to bottom
           case 3:
             Spawn(selectedCar,waypoints[6],direction);
             startingText.GetComponent<Text>().text = "None Selected";
+            writeToCSV("Vehicle", "Car travelling from top to bottom.");
             break;
 
         }
       }
+    }
+
+    void writeToCSV(string logtype, string message)
+    {
+        String timestamp = DateTime.Now.ToString(@"MM\/dd\/yyyy h\:mm tt");
+        String filepath = System.AppContext.BaseDirectory + "\\logfile.csv";
+        try
+        {
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@filepath, true))
+            {
+                file.WriteLine(timestamp + "," + logtype + "," + message);
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new ApplicationException("ERROR LOGGING ", ex);
+        }
     }
 
 
