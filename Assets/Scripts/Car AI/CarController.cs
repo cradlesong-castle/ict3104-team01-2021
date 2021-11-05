@@ -14,14 +14,6 @@ public class CarController : MonoBehaviour
     private Vector3 lastPosition;
     Vector3 velocity;
 
-    // Start is called before the first frame update
-    private void Awake()
-    {
-        movementSpeed = Random.Range(4f, 7f);
-
-
-    }
-
     // Update is called once per frame
     void Update()
     {
