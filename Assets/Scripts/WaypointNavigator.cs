@@ -7,7 +7,10 @@ public class WaypointNavigator : MonoBehaviour
 
     public GameObject car;
     CarController controller;
+    public SceneController sceneController;
     public Waypoint currentWaypoint;
+    public Waypoint nextWaypoint;
+
     private void Awake()
     {
         controller = GetComponent<CarController>();
@@ -23,15 +26,27 @@ public class WaypointNavigator : MonoBehaviour
     {
         if (controller.reachedDestination)
         {
-            if (currentWaypoint.nextWaypoint != null){
-              currentWaypoint = currentWaypoint.nextWaypoint;
-              controller.SetDestination(currentWaypoint.GetPosition());
-
+            if (currentWaypoint.nextWaypoint != null)
+            {
+                currentWaypoint = currentWaypoint.nextWaypoint;
+                controller.SetDestination(currentWaypoint.GetPosition());
+                if (currentWaypoint.nextWaypoint != null)
+                {
+                    nextWaypoint = currentWaypoint.nextWaypoint;
+                }
+                if (currentWaypoint.name == "End")
+                {
+                    controller.OperateIndicatorLights("left", "off");
+                    controller.OperateIndicatorLights("right", "off");
+                }
             }
-            else{
-              Destroy(car);
+            else
+            {
+                controller.LogDespawn();
+                sceneController.ReactivateButtons();
+                sceneController.ResetSpawnText();
+                Destroy(car);
             }
-
         }
     }
 }

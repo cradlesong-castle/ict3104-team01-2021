@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,10 @@ public class SceneController : MonoBehaviour
     public GameObject startingText;
     public Text driverText;
     public Text avText;
+
+    [Header("WeatherControls")]
+    public bool isDay;
+    public Light environmentLight;
 
     [Header("Waypoints")]  /*
        * List of routes
@@ -31,7 +36,6 @@ public class SceneController : MonoBehaviour
     public GameObject driverCar;
     public GameObject driverlessCar;
     public GameObject driverModel;
-
 
     [Header("Intersections")]
     public GameObject intersectionNone;
@@ -58,6 +62,9 @@ public class SceneController : MonoBehaviour
     public GameObject previewCar;
     public Transform previewCarLocation;
 
+
+    [Header("UI References")]
+    public GameObject spawnButtons;
     //press count keeps track of whether its the start or end
     private int pressCount = 0;
     /*
@@ -74,6 +81,13 @@ public class SceneController : MonoBehaviour
     void Start()
     {
         selectedCar = carA;
+        WriteToCSV("Event", "Program", "Scene started");
+        WriteToCSV("Event", "Intersection Change", "Intersection None set");
+        WriteToCSV("Event", "Vehicle Appearance", "Driver visible set");
+        WriteToCSV("Event", "Vehicle Appearance", "AV label non-visible set");
+        WriteToCSV("Event", "Road Direction", "Uni-direction roads set");
+        WriteToCSV("Event", "Crossing", "Zebra Crossing set");
+        WriteToCSV("Event", "Vehicle Appearance", "Car A set");
     }
 
     /*
@@ -81,18 +95,21 @@ public class SceneController : MonoBehaviour
      */
     public void SwitchIntersectionNone()
     {
+        WriteToCSV("Event", "Intersection Change", "Intersection None set");
         intersectionNone.SetActive(true);
         intersectionT.SetActive(false);
         intersectionX.SetActive(false);
     }
     public void SwitchIntersectionT()
     {
+        WriteToCSV("Event", "Intersection Change", "Intersection T (T-Junction) set");
         intersectionT.SetActive(true);
         intersectionNone.SetActive(false);
         intersectionX.SetActive(false);
     }
     public void SwitchIntersectionX()
     {
+        WriteToCSV("Event", "Intersection Change", "Intersection X (Cross-Junction) set");
         intersectionX.SetActive(true);
         intersectionNone.SetActive(false);
         intersectionT.SetActive(false);
@@ -103,17 +120,20 @@ public class SceneController : MonoBehaviour
     public void SwitchCarA()
     {
         selectedCar = carA;
+        WriteToCSV("Event", "Vehicle Appearance", "Car A set");
         UpdatePreview();
     }
     public void SwitchCarB()
     {
         selectedCar = carB;
+        WriteToCSV("Event", "Vehicle Appearance", "Car B set");
         UpdatePreview();
 
     }
     public void SwitchCarC()
     {
         selectedCar = carC;
+        WriteToCSV("Event", "Vehicle Appearance", "Car C set");
         UpdatePreview();
     }
     public void ChangeDriverVisibility()
@@ -122,6 +142,7 @@ public class SceneController : MonoBehaviour
         {
             isDriverless = true;
             driverText.text = "Not Visible";
+            WriteToCSV("Event", "Vehicle Appearance", "Driver not visible set");
             carA.transform.Find("Driver").gameObject.SetActive(false);
             carB.transform.Find("Driver").gameObject.SetActive(false);
             carC.transform.Find("Driver").gameObject.SetActive(false);
@@ -130,6 +151,7 @@ public class SceneController : MonoBehaviour
         {
             isDriverless = false;
             driverText.text = "Visible";
+            WriteToCSV("Event", "Vehicle Appearance", "Driver visible set");
             carA.transform.Find("Driver").gameObject.SetActive(true);
             carB.transform.Find("Driver").gameObject.SetActive(true);
             carC.transform.Find("Driver").gameObject.SetActive(true);
@@ -142,6 +164,7 @@ public class SceneController : MonoBehaviour
         {
             // Switch to Black (from none)
             avText.text = "Black";
+            WriteToCSV("Event", "Vehicle Appearance", "AV label black set");
             carA.transform.Find("avBlack").gameObject.SetActive(true);
             carB.transform.Find("avBlack").gameObject.SetActive(true);
             carC.transform.Find("avBlack").gameObject.SetActive(true);
@@ -151,6 +174,7 @@ public class SceneController : MonoBehaviour
         {
             // Switch to White (from Black)
             avText.text = "White";
+            WriteToCSV("Event", "Vehicle Appearance", "AV label white set");
             carA.transform.Find("avWhite").gameObject.SetActive(true);
             carB.transform.Find("avWhite").gameObject.SetActive(true);
             carC.transform.Find("avWhite").gameObject.SetActive(true);
@@ -163,6 +187,7 @@ public class SceneController : MonoBehaviour
         {
             // Switch to White (from White)
             avText.text = "Not Visible";
+            WriteToCSV("Event", "Vehicle Appearance", "AV label non-visible set");
             carA.transform.Find("avWhite").gameObject.SetActive(false);
             carB.transform.Find("avWhite").gameObject.SetActive(false);
             carC.transform.Find("avWhite").gameObject.SetActive(false);
@@ -196,6 +221,7 @@ public class SceneController : MonoBehaviour
         {
             arrow.SetActive(false);
         }
+        WriteToCSV("Event", "Road Direction", "Uni-direction roads set");
     }
     public void SwitchDirectionBi()
     {
@@ -207,6 +233,7 @@ public class SceneController : MonoBehaviour
         {
             arrow.SetActive(false);
         }
+        WriteToCSV("Event", "Road Direction", "Bi-direction roads set");
     }
 
     /*
@@ -222,6 +249,7 @@ public class SceneController : MonoBehaviour
         {
             tile.SetActive(false);
         }
+        WriteToCSV("Event", "Crossing", "Traffic Light set");
     }
     public void SwitchCrossingZebra()
     {
@@ -233,28 +261,40 @@ public class SceneController : MonoBehaviour
         {
             tile.SetActive(false);
         }
+        WriteToCSV("Event", "Crossing", "Zebra Crossing set");
     }
 
-    public void Spawn(GameObject carPrefab, GameObject waypoint, int direction)
+    public void DeactivateButtons()
     {
+        spawnButtons.SetActive(false);
+    }
 
+    public void ReactivateButtons()
+    {
+        spawnButtons.SetActive(true);
+    }
+
+    public void Spawn(GameObject carPrefab, GameObject waypoint, int direction, string turnDir = "")
+    {
+        WriteToCSV("Event", "Vehicle Spawn", "Car spawned");
+        DeactivateButtons();
         GameObject obj = Instantiate(carPrefab);
         switch (direction)
         {
             case 0:
-                print("rotate bottom");
+                //print("rotate bottom");
                 obj.transform.rotation = Quaternion.Euler(Vector3.down * 0);
                 break;
             case 1:
-                print("rotate left");
+                //print("rotate left");
                 obj.transform.rotation = Quaternion.Euler(Vector3.down * 270);
                 break;
             case 2:
-                print("rotate right");
+                //print("rotate right");
                 obj.transform.rotation = Quaternion.Euler(Vector3.down * 90);
                 break;
             case 3:
-                print("rotate top");
+                //print("rotate top");
                 obj.transform.rotation = Quaternion.Euler(Vector3.down * 180);
                 break;
         }
@@ -262,6 +302,20 @@ public class SceneController : MonoBehaviour
         obj.GetComponent<WaypointNavigator>().enabled = true;
         obj.GetComponent<CarController>().enabled = true;
         obj.GetComponent<WaypointNavigator>().currentWaypoint = child.GetComponent<Waypoint>();
+        if (turnDir != "")
+        {
+            if (turnDir == "left")
+            {
+                obj.GetComponent<CarController>().isTurningLeft = true;
+                obj.GetComponent<CarController>().OperateIndicatorLights("left", "on");
+
+            }
+            else if (turnDir == "right")
+            {
+                obj.GetComponent<CarController>().isTurningRight = true;
+                obj.GetComponent<CarController>().OperateIndicatorLights("right", "on");
+            }
+        }
         obj.transform.position = child.position;
     }
 
@@ -276,12 +330,12 @@ public class SceneController : MonoBehaviour
      */
     public void SpawnLeftDriver()
     {
-        print("Click Left");
+        //print("Click Left");
         if (pressCount == 0)
         {
             direction = 1;
             pressCount += 1;
-            startingText.GetComponent<Text>().text = "Start from Left";
+            startingText.GetComponent<Text>().text = "Start: Left\nEnd: Click on a square on the right";
         }
         else
         {
@@ -290,18 +344,21 @@ public class SceneController : MonoBehaviour
             {
                 //case 0: bottom to left
                 case 0:
-                    Spawn(selectedCar, waypoints[2], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    Spawn(selectedCar, waypoints[2], direction, "left");
+                    startingText.GetComponent<Text>().text = "Start: Bottom\nEnd: Left";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from bottom to left.");
                     break;
                 //case 2: right to left
                 case 2:
                     Spawn(selectedCar, waypoints[11], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    startingText.GetComponent<Text>().text = "Start: Right\nEnd: Left";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from right to left.");
                     break;
                 //case 3: top to left
                 case 3:
-                    Spawn(selectedCar, waypoints[7], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    Spawn(selectedCar, waypoints[7], direction, "right");
+                    startingText.GetComponent<Text>().text = "Start: Top\nEnd: Left";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from top to left.");
                     break;
 
             }
@@ -310,12 +367,12 @@ public class SceneController : MonoBehaviour
 
     public void SpawnRightDriver()
     {
-        print("Click Right");
+        //print("Click Right");
         if (pressCount == 0)
         {
             direction = 2;
             pressCount += 1;
-            startingText.GetComponent<Text>().text = "Start from Right";
+            startingText.GetComponent<Text>().text = "Start: Right\nEnd: Click on a square on the right";
         }
         else
         {
@@ -324,18 +381,21 @@ public class SceneController : MonoBehaviour
             {
                 //case 0: bottom to right
                 case 0:
-                    Spawn(selectedCar, waypoints[1], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    Spawn(selectedCar, waypoints[1], direction, "right");
+                    startingText.GetComponent<Text>().text = "Start: Bottom\nEnd: Right";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from bottom to right.");
                     break;
                 //case 1: left to right
                 case 1:
                     Spawn(selectedCar, waypoints[3], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    startingText.GetComponent<Text>().text = "Start: Left\nEnd: Right";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from left to right.");
                     break;
                 //case 3: top to right
                 case 3:
-                    Spawn(selectedCar, waypoints[8], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    Spawn(selectedCar, waypoints[8], direction, "left");
+                    startingText.GetComponent<Text>().text = "Start: Top\nEnd: Right";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from top to right.");
                     break;
 
             }
@@ -343,13 +403,13 @@ public class SceneController : MonoBehaviour
     }
     public void SpawnTopDriver()
     {
-        print("Click Top");
+        //print("Click Top");
 
         if (pressCount == 0)
         {
             direction = 3;
             pressCount += 1;
-            startingText.GetComponent<Text>().text = "Start from Top";
+            startingText.GetComponent<Text>().text = "Start: Top\nEnd: Click on a square on the right";
         }
         else
         {
@@ -359,32 +419,41 @@ public class SceneController : MonoBehaviour
                 //case 0: bottom to top
                 case 0:
                     Spawn(selectedCar, waypoints[0], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    startingText.GetComponent<Text>().text = "Start: Bottom\nEnd: Top";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from bottom to top.");
                     break;
                 //case 1: left to top
                 case 1:
-                    Spawn(selectedCar, waypoints[5], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    Spawn(selectedCar, waypoints[5], direction, "left");
+                    startingText.GetComponent<Text>().text = "Start: Left\nEnd: Top";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from left to top.");
                     //Spawn(selectedCar,waypoints[1]);
                     break;
                 //case 2: right to top
                 case 2:
-                    Spawn(selectedCar, waypoints[10], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    Spawn(selectedCar, waypoints[10], direction, "right");
+                    startingText.GetComponent<Text>().text = "Start: Right\nEnd: Top";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from right to top.");
                     break;
 
             }
         }
     }
 
+    public void ResetSpawnText()
+    {
+        startingText.GetComponent<Text>().text = "Start: Click on a square on the right\nEnd: Click on a square on the right";
+    }
+
     public void SpawnBottomDriver()
     {
-        print("Click Bottom");
+        //print("Click Bottom");
+        //print("Click Bottom");
         if (pressCount == 0)
         {
             direction = 0;
             pressCount += 1;
-            startingText.GetComponent<Text>().text = "Start from Bottom";
+            startingText.GetComponent<Text>().text = "Start: Bottom\nEnd: Click on a square on the right";
         }
         else
         {
@@ -393,23 +462,42 @@ public class SceneController : MonoBehaviour
             {
                 //case 1: left to bottom
                 case 1:
-                    Spawn(selectedCar, waypoints[4], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    Spawn(selectedCar, waypoints[4], direction, "right");
+                    startingText.GetComponent<Text>().text = "Start: Left\nEnd: Bottom";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from left to bottom.");
                     break;
                 //case 2: right to bottom
                 case 2:
-                    Spawn(selectedCar, waypoints[9], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    Spawn(selectedCar, waypoints[9], direction, "left");
+                    startingText.GetComponent<Text>().text = "Start: Right\nEnd: Bottom";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from right to bottom.");
                     break;
                 //case 3: top to bottom
                 case 3:
                     Spawn(selectedCar, waypoints[6], direction);
-                    startingText.GetComponent<Text>().text = "None Selected";
+                    startingText.GetComponent<Text>().text = "Start: Top\nEnd: Bottom";
+                    WriteToCSV("Event", "Vehicle Spawn", "Car travelling from top to bottom.");
                     break;
 
             }
         }
     }
 
+    public void WriteToCSV(string logtype, string logcat, string message)
+    {
+        String timestamp = DateTime.Now.ToString(@"MM\/dd\/yyyy h\:mm\:ss tt");
+        String filepath = System.AppContext.BaseDirectory + "\\logfile.csv";
+        try
+        {
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@filepath, true))
+            {
+                file.WriteLine(timestamp + "," + logtype + "," + logcat + "," + message);
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new ApplicationException("ERROR LOGGING ", ex);
+        }
+    }
 
 }

@@ -13,6 +13,8 @@ public class FlexibleColorPicker : MonoBehaviour {
     */
 
     //Unity connections
+    public SceneController sceneController;
+
     [Tooltip("Connections to the FCP's picker images, this should not be adjusted unless in advanced use cases.")]
     public Picker[] pickers;
     [Serializable]
@@ -191,6 +193,7 @@ public class FlexibleColorPicker : MonoBehaviour {
     private void Start() {
         this.bufferedColor = new BufferedColor(startingColor);
         canvas = GetComponentInParent<Canvas>();
+        sceneController.WriteToCSV("Event", "Vehicle Appearance", "\"Car color set as " + startingColor + "\"");
     }
 
     private void OnEnable() {

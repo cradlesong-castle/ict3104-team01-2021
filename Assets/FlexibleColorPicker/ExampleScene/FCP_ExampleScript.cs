@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FCP_ExampleScript : MonoBehaviour
 {
+    public SceneController sceneController;
     public FlexibleColorPicker fcp;
     public Material material;
 
@@ -19,6 +20,7 @@ public class FCP_ExampleScript : MonoBehaviour
         if(internalColor != externalColor) {
             fcp.color = externalColor;
             internalColor = externalColor;
+            //sceneController.WriteToCSV("Event", "Vehicle Appearance", "\"Car color set as " + externalColor + "\"");
         }
 
         //extract color from the FCP and apply it to the object material
