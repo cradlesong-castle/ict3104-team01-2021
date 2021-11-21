@@ -83,14 +83,14 @@ public class SceneController : MonoBehaviour
 
     void Start()
     {
-        selectedCar = carA;
+        selectedCar = carNormal;
         WriteToCSV("Event", "Program", "Scene started");
         WriteToCSV("Event", "Intersection Change", "Intersection None set");
         WriteToCSV("Event", "Vehicle Appearance", "Driver visible set");
         WriteToCSV("Event", "Vehicle Appearance", "AV label non-visible set");
         WriteToCSV("Event", "Road Direction", "Uni-direction roads set");
         WriteToCSV("Event", "Crossing", "Zebra Crossing set");
-        WriteToCSV("Event", "Vehicle Appearance", "Car A set");
+        WriteToCSV("Event", "Vehicle Appearance", "Normal Car set");
     }
 
     /*

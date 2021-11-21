@@ -14,6 +14,7 @@ public class CarController : MonoBehaviour
     public float stopDistance = 2f;
     public Vector3 destination;
     public bool reachedDestination;
+    public GameObject[] carWheels;
 
     [Header("Car Booleans and Logic")]
     public GameObject player;
@@ -132,6 +133,14 @@ public class CarController : MonoBehaviour
         }
     }
 
+    void RotateWheels()
+    {
+        foreach (var wheel in carWheels)
+        {
+            wheel.transform.Rotate(movementSpeed * movementSpeed * movementSpeed * Time.deltaTime, 0, 0);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -162,6 +171,7 @@ public class CarController : MonoBehaviour
             var rightDotProduct = Vector3.Dot(transform.right, velocity);
 
         }
+        RotateWheels();
         lastPosition = transform.position;
     }
 

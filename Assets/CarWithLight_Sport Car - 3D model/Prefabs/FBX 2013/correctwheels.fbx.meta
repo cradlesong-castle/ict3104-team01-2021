@@ -1,0 +1,1750 @@
+fileFormatVersion: 2
+guid: 8b15986a56282464f89b3ddf5eacc9ed
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -8372654508396856393
+    second: Body|Body.001|Body.001|Body_Windows|Default Take|Layer0|Body.001|Bod
+  - first:
+      74: -686783975259010786
+    second: Body|Body.001|Body.001|Body|Default Take|Layer0.001|Body.001|Body|De
+  - first:
+      74: 7450474413160329217
+    second: Body|Body.001|Body.001|Body|Default Take|Layer0.002|Body.001|Body|De
+  - first:
+      74: 2988522244471312290
+    second: Body|Body.001|Body.001|Body|Default Take|Layer0.003|Body.001|Body|De
+  - first:
+      74: -3011678242163526682
+    second: Body|Body.001|Body.001|Body|Default Take|Layer0.004|Body.001|Body|De
+  - first:
+      74: 6709462688763954771
+    second: Body|Body.001|Body.001|Body|Default Take|Layer0.005|Body.001|Body|De
+  - first:
+      74: 6504315541153345348
+    second: Body|Body.001|Body.001|Body|Default Take|Layer0.006|Body.001|Body|De
+  - first:
+      74: -7072107331271973150
+    second: Body|Body.001|Body.001|Body|Default Take|Layer0|Body.001|Body|Defaul
+  - first:
+      74: -4053162578893867123
+    second: Body|Body.001|Body.001|Collider|Default Take|Layer0|Body.001|Collide
+  - first:
+      74: -8754251050843243447
+    second: Body|Body.001|Body.001|Engine_Hood_Glass|Default Take|Layer0|Body.00
+  - first:
+      74: 2632312365882932231
+    second: Body|Body.001|Body.001|Engine_Hood|Default Take|Layer0|Body.001|Engi
+  - first:
+      74: -2238840542911063640
+    second: Body|Body.001|Body.001|FL_Wheel|Default Take|Layer0|Body.001|FL_Whee
+  - first:
+      74: -4260089508512816328
+    second: Body|Body.001|Body.001|FR_Wheel|Default Take|Layer0|Body.001|FR_Whee
+  - first:
+      74: -8060835403636801152
+    second: Body|Body.001|Body.001|Front_Hood|Default Take|Layer0|Body.001|Front
+  - first:
+      74: -8176195575836800324
+    second: Body|Body.001|Body.001|Grid|Default Take|Layer0|Body.001|Grid|Defaul
+  - first:
+      74: 6454423693026491070
+    second: Body|Body.001|Body.001|Left_Deflector|Default Take|Layer0|Body.001|L
+  - first:
+      74: 3893634295487731074
+    second: Body|Body.001|Body.001|Left_Door_Window|Default Take|Layer0|Body.001
+  - first:
+      74: 9191890175924052487
+    second: Body|Body.001|Body.001|Left_Door|Default Take|Layer0|Body.001|Left_D
+  - first:
+      74: 6266834247146241933
+    second: Body|Body.001|Body.001|LicensePlate|Default Take|Layer0|Body.001|Lic
+  - first:
+      74: 8114523457709170234
+    second: Body|Body.001|Body.001|LightGlass|Default Take|Layer0|Body.001|Light
+  - first:
+      74: 7530712671345602755
+    second: Body|Body.001|Body.001|Right_Deflector|Default Take|Layer0|Body.001|
+  - first:
+      74: 1075126594822751386
+    second: Body|Body.001|Body.001|Right_Door_Window|Default Take|Layer0|Body.00
+  - first:
+      74: -8928738336567856989
+    second: Body|Body.001|Body.001|Right_Door|Default Take|Layer0|Body.001|Right
+  - first:
+      74: 2462480336510314092
+    second: Body|Body.001|Body.001|RL_Wheel|Default Take|Layer0|Body.001|RL_Whee
+  - first:
+      74: -4910895205971658446
+    second: Body|Body.001|Body.001|RR_Wheel|Default Take|Layer0|Body.001|RR_Whee
+  - first:
+      74: 691556872981954921
+    second: Body|Body.001|Body.001|Wipers|Default Take|Layer0|Body.001|Wipers|De
+  - first:
+      74: 7695408681675556729
+    second: Body|Body.002|Body.002|Body_Windows|Default Take|Layer0|Body.002|Bod
+  - first:
+      74: -6154950895593176500
+    second: Body|Body.002|Body.002|Body|Default Take|Layer0.001|Body.002|Body|De
+  - first:
+      74: -7867036794424680544
+    second: Body|Body.002|Body.002|Body|Default Take|Layer0.002|Body.002|Body|De
+  - first:
+      74: -5167889314423577478
+    second: Body|Body.002|Body.002|Body|Default Take|Layer0.003|Body.002|Body|De
+  - first:
+      74: -6422129951455817389
+    second: Body|Body.002|Body.002|Body|Default Take|Layer0.004|Body.002|Body|De
+  - first:
+      74: 3431691807325169303
+    second: Body|Body.002|Body.002|Body|Default Take|Layer0.005|Body.002|Body|De
+  - first:
+      74: 8490172209170943883
+    second: Body|Body.002|Body.002|Body|Default Take|Layer0.006|Body.002|Body|De
+  - first:
+      74: -3936347084896089357
+    second: Body|Body.002|Body.002|Body|Default Take|Layer0|Body.002|Body|Defaul
+  - first:
+      74: 8578433652228544697
+    second: Body|Body.002|Body.002|Collider|Default Take|Layer0|Body.002|Collide
+  - first:
+      74: -5896584522906157032
+    second: Body|Body.002|Body.002|Engine_Hood_Glass|Default Take|Layer0|Body.00
+  - first:
+      74: 1922884330370331965
+    second: Body|Body.002|Body.002|Engine_Hood|Default Take|Layer0|Body.002|Engi
+  - first:
+      74: 7106721677544991621
+    second: Body|Body.002|Body.002|FL_Wheel|Default Take|Layer0|Body.002|FL_Whee
+  - first:
+      74: -6106701711358799792
+    second: Body|Body.002|Body.002|FR_Wheel|Default Take|Layer0|Body.002|FR_Whee
+  - first:
+      74: -2210715364541194029
+    second: Body|Body.002|Body.002|Front_Hood|Default Take|Layer0|Body.002|Front
+  - first:
+      74: 8442727101799920176
+    second: Body|Body.002|Body.002|Grid|Default Take|Layer0|Body.002|Grid|Defaul
+  - first:
+      74: -3966401854110991224
+    second: Body|Body.002|Body.002|Left_Deflector|Default Take|Layer0|Body.002|L
+  - first:
+      74: -4831103748367052971
+    second: Body|Body.002|Body.002|Left_Door_Window|Default Take|Layer0|Body.002
+  - first:
+      74: 3051693281647508577
+    second: Body|Body.002|Body.002|Left_Door|Default Take|Layer0|Body.002|Left_D
+  - first:
+      74: -5852471818417013306
+    second: Body|Body.002|Body.002|LicensePlate|Default Take|Layer0|Body.002|Lic
+  - first:
+      74: -1691212775584749749
+    second: Body|Body.002|Body.002|LightGlass|Default Take|Layer0|Body.002|Light
+  - first:
+      74: -2977691501915584829
+    second: Body|Body.002|Body.002|Right_Deflector|Default Take|Layer0|Body.002|
+  - first:
+      74: -9184244438412925551
+    second: Body|Body.002|Body.002|Right_Door_Window|Default Take|Layer0|Body.00
+  - first:
+      74: 2081525507981132307
+    second: Body|Body.002|Body.002|Right_Door|Default Take|Layer0|Body.002|Right
+  - first:
+      74: -8048428843892434002
+    second: Body|Body.002|Body.002|RL_Wheel|Default Take|Layer0|Body.002|RL_Whee
+  - first:
+      74: -3889381772040160317
+    second: Body|Body.002|Body.002|RR_Wheel|Default Take|Layer0|Body.002|RR_Whee
+  - first:
+      74: 4253154235886116645
+    second: Body|Body.002|Body.002|Wipers|Default Take|Layer0|Body.002|Wipers|De
+  - first:
+      74: 6875139880251942825
+    second: Body|Body|Body|Body_Windows|Default Take|Layer0|Body|Body_Windows|De
+  - first:
+      74: 8495073776977479143
+    second: Body|Body|Body|Body|Default Take|Layer0.001|Body|Body|Default Take|L
+  - first:
+      74: 8452645930376554030
+    second: Body|Body|Body|Body|Default Take|Layer0.002|Body|Body|Default Take|L
+  - first:
+      74: -8831946467467436450
+    second: Body|Body|Body|Body|Default Take|Layer0.003|Body|Body|Default Take|L
+  - first:
+      74: -2743126535538647238
+    second: Body|Body|Body|Body|Default Take|Layer0.004|Body|Body|Default Take|L
+  - first:
+      74: 8293030945498667758
+    second: Body|Body|Body|Body|Default Take|Layer0.005|Body|Body|Default Take|L
+  - first:
+      74: -7055115887800476398
+    second: Body|Body|Body|Body|Default Take|Layer0.006|Body|Body|Default Take|L
+  - first:
+      74: 7723078194792684742
+    second: Body|Body|Body|Body|Default Take|Layer0|Body|Body|Default Take|Layer
+  - first:
+      74: 1073428993040971146
+    second: Body|Body|Body|Collider|Default Take|Layer0|Body|Collider|Default Ta
+  - first:
+      74: 461248377745765262
+    second: Body|Body|Body|Engine_Hood_Glass|Default Take|Layer0|Body|Engine_Hoo
+  - first:
+      74: -5060993116608165143
+    second: Body|Body|Body|Engine_Hood|Default Take|Layer0|Body|Engine_Hood|Defa
+  - first:
+      74: -2581742837159407576
+    second: Body|Body|Body|FL_Wheel|Default Take|Layer0|Body|FL_Wheel|Default Ta
+  - first:
+      74: -4692185265548442969
+    second: Body|Body|Body|FR_Wheel|Default Take|Layer0|Body|FR_Wheel|Default Ta
+  - first:
+      74: -2295302176095403614
+    second: Body|Body|Body|Front_Hood|Default Take|Layer0|Body|Front_Hood|Defaul
+  - first:
+      74: -4950904911786952320
+    second: Body|Body|Body|Grid|Default Take|Layer0|Body|Grid|Default Take|Layer
+  - first:
+      74: -8036295947715210273
+    second: Body|Body|Body|Left_Deflector|Default Take|Layer0|Body|Left_Deflecto
+  - first:
+      74: -4881233994038485574
+    second: Body|Body|Body|Left_Door_Window|Default Take|Layer0|Body|Left_Door_W
+  - first:
+      74: 4147120502342209993
+    second: 'Body|Body|Body|Left_Door|Default Take|Layer0|Body|Left_Door|Default '
+  - first:
+      74: -7891618005657610769
+    second: Body|Body|Body|LicensePlate|Default Take|Layer0|Body|LicensePlate|De
+  - first:
+      74: 7986232768385676732
+    second: Body|Body|Body|LightGlass|Default Take|Layer0|Body|LightGlass|Defaul
+  - first:
+      74: -8487294729599053691
+    second: Body|Body|Body|Right_Deflector|Default Take|Layer0|Body|Right_Deflec
+  - first:
+      74: 1777226500331262655
+    second: Body|Body|Body|Right_Door_Window|Default Take|Layer0|Body|Right_Door
+  - first:
+      74: 3418722026161705903
+    second: Body|Body|Body|Right_Door|Default Take|Layer0|Body|Right_Door|Defaul
+  - first:
+      74: 3377562135599671608
+    second: Body|Body|Body|RL_Wheel|Default Take|Layer0|Body|RL_Wheel|Default Ta
+  - first:
+      74: 6054633243816954875
+    second: Body|Body|Body|RR_Wheel|Default Take|Layer0|Body|RR_Wheel|Default Ta
+  - first:
+      74: 4132204879415819459
+    second: Body|Body|Body|Wipers|Default Take|Layer0|Body|Wipers|Default Take|L
+  - first:
+      74: -4525068845225261069
+    second: Body|FL_Wheel|FL_Wheel|Body_Windows|Default Take|Layer0|FL_Wheel|Bod
+  - first:
+      74: 8232463689118351806
+    second: Body|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.001|FL_Wheel|Body|De
+  - first:
+      74: -8520180204319117543
+    second: Body|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.002|FL_Wheel|Body|De
+  - first:
+      74: -2028661841265202214
+    second: Body|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.003|FL_Wheel|Body|De
+  - first:
+      74: -5277639254704347133
+    second: Body|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.004|FL_Wheel|Body|De
+  - first:
+      74: 6332717745391775255
+    second: Body|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.005|FL_Wheel|Body|De
+  - first:
+      74: 7645474309680918663
+    second: Body|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.006|FL_Wheel|Body|De
+  - first:
+      74: 8162826748386667824
+    second: Body|FL_Wheel|FL_Wheel|Body|Default Take|Layer0|FL_Wheel|Body|Defaul
+  - first:
+      74: -6552159878110175107
+    second: Body|FL_Wheel|FL_Wheel|Collider|Default Take|Layer0|FL_Wheel|Collide
+  - first:
+      74: 8530563356389963667
+    second: Body|FL_Wheel|FL_Wheel|Engine_Hood_Glass|Default Take|Layer0|FL_Whee
+  - first:
+      74: -7915054548093324965
+    second: Body|FL_Wheel|FL_Wheel|Engine_Hood|Default Take|Layer0|FL_Wheel|Engi
+  - first:
+      74: -5593183642582522566
+    second: Body|FL_Wheel|FL_Wheel|FL_Wheel|Default Take|Layer0|FL_Wheel|FL_Whee
+  - first:
+      74: 3894087459788502550
+    second: Body|FL_Wheel|FL_Wheel|FR_Wheel|Default Take|Layer0|FL_Wheel|FR_Whee
+  - first:
+      74: 4947126094098599233
+    second: Body|FL_Wheel|FL_Wheel|Front_Hood|Default Take|Layer0|FL_Wheel|Front
+  - first:
+      74: -927615367246707126
+    second: Body|FL_Wheel|FL_Wheel|Grid|Default Take|Layer0|FL_Wheel|Grid|Defaul
+  - first:
+      74: -5917891254940251599
+    second: Body|FL_Wheel|FL_Wheel|Left_Deflector|Default Take|Layer0|FL_Wheel|L
+  - first:
+      74: 3708311434941853706
+    second: Body|FL_Wheel|FL_Wheel|Left_Door_Window|Default Take|Layer0|FL_Wheel
+  - first:
+      74: -6110780897831634486
+    second: Body|FL_Wheel|FL_Wheel|Left_Door|Default Take|Layer0|FL_Wheel|Left_D
+  - first:
+      74: -2513538091528767133
+    second: Body|FL_Wheel|FL_Wheel|LicensePlate|Default Take|Layer0|FL_Wheel|Lic
+  - first:
+      74: -7269434290869699686
+    second: Body|FL_Wheel|FL_Wheel|LightGlass|Default Take|Layer0|FL_Wheel|Light
+  - first:
+      74: 9212902864963210745
+    second: Body|FL_Wheel|FL_Wheel|Right_Deflector|Default Take|Layer0|FL_Wheel|
+  - first:
+      74: 4570148763188574737
+    second: Body|FL_Wheel|FL_Wheel|Right_Door_Window|Default Take|Layer0|FL_Whee
+  - first:
+      74: -7378630701144698518
+    second: Body|FL_Wheel|FL_Wheel|Right_Door|Default Take|Layer0|FL_Wheel|Right
+  - first:
+      74: 1795209131919462775
+    second: Body|FL_Wheel|FL_Wheel|RL_Wheel|Default Take|Layer0|FL_Wheel|RL_Whee
+  - first:
+      74: 1219586767726304568
+    second: Body|FL_Wheel|FL_Wheel|RR_Wheel|Default Take|Layer0|FL_Wheel|RR_Whee
+  - first:
+      74: -8673722054462983297
+    second: Body|FL_Wheel|FL_Wheel|Wipers|Default Take|Layer0|FL_Wheel|Wipers|De
+  - first:
+      74: -3535389612126706691
+    second: Body|FR_Wheel|FR_Wheel|Body_Windows|Default Take|Layer0|FR_Wheel|Bod
+  - first:
+      74: -1102541530211438741
+    second: Body|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.001|FR_Wheel|Body|De
+  - first:
+      74: -3641644274787909052
+    second: Body|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.002|FR_Wheel|Body|De
+  - first:
+      74: -999529702933342692
+    second: Body|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.003|FR_Wheel|Body|De
+  - first:
+      74: 8968299925805976227
+    second: Body|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.004|FR_Wheel|Body|De
+  - first:
+      74: 6779423283759471145
+    second: Body|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.005|FR_Wheel|Body|De
+  - first:
+      74: 5406943215961342328
+    second: Body|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.006|FR_Wheel|Body|De
+  - first:
+      74: 535295292235912377
+    second: Body|FR_Wheel|FR_Wheel|Body|Default Take|Layer0|FR_Wheel|Body|Defaul
+  - first:
+      74: -4311205364905611114
+    second: Body|FR_Wheel|FR_Wheel|Collider|Default Take|Layer0|FR_Wheel|Collide
+  - first:
+      74: -9178814211736181660
+    second: Body|FR_Wheel|FR_Wheel|Engine_Hood_Glass|Default Take|Layer0|FR_Whee
+  - first:
+      74: -2523245071904272716
+    second: Body|FR_Wheel|FR_Wheel|Engine_Hood|Default Take|Layer0|FR_Wheel|Engi
+  - first:
+      74: 6948548864958660075
+    second: Body|FR_Wheel|FR_Wheel|FL_Wheel|Default Take|Layer0|FR_Wheel|FL_Whee
+  - first:
+      74: 8845954295146097212
+    second: Body|FR_Wheel|FR_Wheel|FR_Wheel|Default Take|Layer0|FR_Wheel|FR_Whee
+  - first:
+      74: -1362735699254049964
+    second: Body|FR_Wheel|FR_Wheel|Front_Hood|Default Take|Layer0|FR_Wheel|Front
+  - first:
+      74: -3920666687858548573
+    second: Body|FR_Wheel|FR_Wheel|Grid|Default Take|Layer0|FR_Wheel|Grid|Defaul
+  - first:
+      74: 4201356577686888674
+    second: Body|FR_Wheel|FR_Wheel|Left_Deflector|Default Take|Layer0|FR_Wheel|L
+  - first:
+      74: 8044975058904538319
+    second: Body|FR_Wheel|FR_Wheel|Left_Door_Window|Default Take|Layer0|FR_Wheel
+  - first:
+      74: -9049497829272273084
+    second: Body|FR_Wheel|FR_Wheel|Left_Door|Default Take|Layer0|FR_Wheel|Left_D
+  - first:
+      74: 337949077512983465
+    second: Body|FR_Wheel|FR_Wheel|LicensePlate|Default Take|Layer0|FR_Wheel|Lic
+  - first:
+      74: 3470159954796810386
+    second: Body|FR_Wheel|FR_Wheel|LightGlass|Default Take|Layer0|FR_Wheel|Light
+  - first:
+      74: -7745289160627811594
+    second: Body|FR_Wheel|FR_Wheel|Right_Deflector|Default Take|Layer0|FR_Wheel|
+  - first:
+      74: 2180413793685232768
+    second: Body|FR_Wheel|FR_Wheel|Right_Door_Window|Default Take|Layer0|FR_Whee
+  - first:
+      74: -5949733838546364020
+    second: Body|FR_Wheel|FR_Wheel|Right_Door|Default Take|Layer0|FR_Wheel|Right
+  - first:
+      74: 6712860767603257169
+    second: Body|FR_Wheel|FR_Wheel|RL_Wheel|Default Take|Layer0|FR_Wheel|RL_Whee
+  - first:
+      74: 4190675912796316994
+    second: Body|FR_Wheel|FR_Wheel|RR_Wheel|Default Take|Layer0|FR_Wheel|RR_Whee
+  - first:
+      74: -7837226934305035310
+    second: Body|FR_Wheel|FR_Wheel|Wipers|Default Take|Layer0|FR_Wheel|Wipers|De
+  - first:
+      74: 395874808669345581
+    second: Body|RL_Wheel|RL_Wheel|Body_Windows|Default Take|Layer0|RL_Wheel|Bod
+  - first:
+      74: 7463303455902178877
+    second: Body|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.001|RL_Wheel|Body|De
+  - first:
+      74: -7083054042918774934
+    second: Body|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.002|RL_Wheel|Body|De
+  - first:
+      74: -8826860074039294608
+    second: Body|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.003|RL_Wheel|Body|De
+  - first:
+      74: 2244695992773096996
+    second: Body|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.004|RL_Wheel|Body|De
+  - first:
+      74: -5383089542369533629
+    second: Body|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.005|RL_Wheel|Body|De
+  - first:
+      74: 502492057766044624
+    second: Body|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.006|RL_Wheel|Body|De
+  - first:
+      74: -1365859676585888866
+    second: Body|RL_Wheel|RL_Wheel|Body|Default Take|Layer0|RL_Wheel|Body|Defaul
+  - first:
+      74: 641026842484772712
+    second: Body|RL_Wheel|RL_Wheel|Collider|Default Take|Layer0|RL_Wheel|Collide
+  - first:
+      74: -8902076000350402663
+    second: Body|RL_Wheel|RL_Wheel|Engine_Hood_Glass|Default Take|Layer0|RL_Whee
+  - first:
+      74: -1365693883324380952
+    second: Body|RL_Wheel|RL_Wheel|Engine_Hood|Default Take|Layer0|RL_Wheel|Engi
+  - first:
+      74: -5443642909639385657
+    second: Body|RL_Wheel|RL_Wheel|FL_Wheel|Default Take|Layer0|RL_Wheel|FL_Whee
+  - first:
+      74: 7238052094578392085
+    second: Body|RL_Wheel|RL_Wheel|FR_Wheel|Default Take|Layer0|RL_Wheel|FR_Whee
+  - first:
+      74: -3327773643458688064
+    second: Body|RL_Wheel|RL_Wheel|Front_Hood|Default Take|Layer0|RL_Wheel|Front
+  - first:
+      74: 588089897237944879
+    second: Body|RL_Wheel|RL_Wheel|Grid|Default Take|Layer0|RL_Wheel|Grid|Defaul
+  - first:
+      74: -5469091559828725867
+    second: Body|RL_Wheel|RL_Wheel|Left_Deflector|Default Take|Layer0|RL_Wheel|L
+  - first:
+      74: 1248999216324418832
+    second: Body|RL_Wheel|RL_Wheel|Left_Door_Window|Default Take|Layer0|RL_Wheel
+  - first:
+      74: 7004112946869224780
+    second: Body|RL_Wheel|RL_Wheel|Left_Door|Default Take|Layer0|RL_Wheel|Left_D
+  - first:
+      74: 1726286987447944843
+    second: Body|RL_Wheel|RL_Wheel|LicensePlate|Default Take|Layer0|RL_Wheel|Lic
+  - first:
+      74: -6897168951941069133
+    second: Body|RL_Wheel|RL_Wheel|LightGlass|Default Take|Layer0|RL_Wheel|Light
+  - first:
+      74: 7326435340168682515
+    second: Body|RL_Wheel|RL_Wheel|Right_Deflector|Default Take|Layer0|RL_Wheel|
+  - first:
+      74: -2767319917925107761
+    second: Body|RL_Wheel|RL_Wheel|Right_Door_Window|Default Take|Layer0|RL_Whee
+  - first:
+      74: 2022101349510782372
+    second: Body|RL_Wheel|RL_Wheel|Right_Door|Default Take|Layer0|RL_Wheel|Right
+  - first:
+      74: 428850085264735099
+    second: Body|RL_Wheel|RL_Wheel|RL_Wheel|Default Take|Layer0|RL_Wheel|RL_Whee
+  - first:
+      74: 8067567412388604761
+    second: Body|RL_Wheel|RL_Wheel|RR_Wheel|Default Take|Layer0|RL_Wheel|RR_Whee
+  - first:
+      74: -8353261294027411194
+    second: Body|RL_Wheel|RL_Wheel|Wipers|Default Take|Layer0|RL_Wheel|Wipers|De
+  - first:
+      74: 1278245032474407728
+    second: Body|RR_Wheel|RR_Wheel|Body_Windows|Default Take|Layer0|RR_Wheel|Bod
+  - first:
+      74: 652906900827867186
+    second: Body|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.001|RR_Wheel|Body|De
+  - first:
+      74: 4220575580760631189
+    second: Body|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.002|RR_Wheel|Body|De
+  - first:
+      74: 3327177389581288095
+    second: Body|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.003|RR_Wheel|Body|De
+  - first:
+      74: -5359051889357952336
+    second: Body|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.004|RR_Wheel|Body|De
+  - first:
+      74: -1538061321813133001
+    second: Body|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.005|RR_Wheel|Body|De
+  - first:
+      74: 4337114494279764300
+    second: Body|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.006|RR_Wheel|Body|De
+  - first:
+      74: 6831853233684942189
+    second: Body|RR_Wheel|RR_Wheel|Body|Default Take|Layer0|RR_Wheel|Body|Defaul
+  - first:
+      74: -737660981157518920
+    second: Body|RR_Wheel|RR_Wheel|Collider|Default Take|Layer0|RR_Wheel|Collide
+  - first:
+      74: 6112763341331466372
+    second: Body|RR_Wheel|RR_Wheel|Engine_Hood_Glass|Default Take|Layer0|RR_Whee
+  - first:
+      74: -4966396346162311313
+    second: Body|RR_Wheel|RR_Wheel|Engine_Hood|Default Take|Layer0|RR_Wheel|Engi
+  - first:
+      74: -6422076877214704769
+    second: Body|RR_Wheel|RR_Wheel|FL_Wheel|Default Take|Layer0|RR_Wheel|FL_Whee
+  - first:
+      74: -9103803575909323816
+    second: Body|RR_Wheel|RR_Wheel|FR_Wheel|Default Take|Layer0|RR_Wheel|FR_Whee
+  - first:
+      74: 5190708564377960084
+    second: Body|RR_Wheel|RR_Wheel|Front_Hood|Default Take|Layer0|RR_Wheel|Front
+  - first:
+      74: 3946882330213069611
+    second: Body|RR_Wheel|RR_Wheel|Grid|Default Take|Layer0|RR_Wheel|Grid|Defaul
+  - first:
+      74: 2316963781178898888
+    second: Body|RR_Wheel|RR_Wheel|Left_Deflector|Default Take|Layer0|RR_Wheel|L
+  - first:
+      74: -5599691410895016920
+    second: Body|RR_Wheel|RR_Wheel|Left_Door_Window|Default Take|Layer0|RR_Wheel
+  - first:
+      74: 5565266537738006602
+    second: Body|RR_Wheel|RR_Wheel|Left_Door|Default Take|Layer0|RR_Wheel|Left_D
+  - first:
+      74: 7428911001691207780
+    second: Body|RR_Wheel|RR_Wheel|LicensePlate|Default Take|Layer0|RR_Wheel|Lic
+  - first:
+      74: -7444598503190918523
+    second: Body|RR_Wheel|RR_Wheel|LightGlass|Default Take|Layer0|RR_Wheel|Light
+  - first:
+      74: -5442723971569148368
+    second: Body|RR_Wheel|RR_Wheel|Right_Deflector|Default Take|Layer0|RR_Wheel|
+  - first:
+      74: 5236057637611096430
+    second: Body|RR_Wheel|RR_Wheel|Right_Door_Window|Default Take|Layer0|RR_Whee
+  - first:
+      74: -310810164718240582
+    second: Body|RR_Wheel|RR_Wheel|Right_Door|Default Take|Layer0|RR_Wheel|Right
+  - first:
+      74: 8689587214693737948
+    second: Body|RR_Wheel|RR_Wheel|RL_Wheel|Default Take|Layer0|RR_Wheel|RL_Whee
+  - first:
+      74: 7094760662353178048
+    second: Body|RR_Wheel|RR_Wheel|RR_Wheel|Default Take|Layer0|RR_Wheel|RR_Whee
+  - first:
+      74: -8494292362678282312
+    second: Body|RR_Wheel|RR_Wheel|Wipers|Default Take|Layer0|RR_Wheel|Wipers|De
+  - first:
+      74: -6424924357274803114
+    second: Body.001|Body.001|Body.001|Body_Windows|Default Take|Layer0|Body.001|Bod
+  - first:
+      74: 7493155086230015753
+    second: Body.001|Body.001|Body.001|Body|Default Take|Layer0.001|Body.001|Body|De
+  - first:
+      74: 7742205532267005345
+    second: Body.001|Body.001|Body.001|Body|Default Take|Layer0.002|Body.001|Body|De
+  - first:
+      74: -8388880370984125608
+    second: Body.001|Body.001|Body.001|Body|Default Take|Layer0.003|Body.001|Body|De
+  - first:
+      74: -4032764238879317604
+    second: Body.001|Body.001|Body.001|Body|Default Take|Layer0.004|Body.001|Body|De
+  - first:
+      74: -8674437640497211754
+    second: Body.001|Body.001|Body.001|Body|Default Take|Layer0.005|Body.001|Body|De
+  - first:
+      74: -4049046252158116809
+    second: Body.001|Body.001|Body.001|Body|Default Take|Layer0.006|Body.001|Body|De
+  - first:
+      74: 2163888125027820583
+    second: Body.001|Body.001|Body.001|Body|Default Take|Layer0|Body.001|Body|Defaul
+  - first:
+      74: 8239116800835991807
+    second: Body.001|Body.001|Body.001|Collider|Default Take|Layer0|Body.001|Collide
+  - first:
+      74: -2078434887323097397
+    second: Body.001|Body.001|Body.001|Engine_Hood_Glass|Default Take|Layer0|Body.00
+  - first:
+      74: 6556472601429615677
+    second: Body.001|Body.001|Body.001|Engine_Hood|Default Take|Layer0|Body.001|Engi
+  - first:
+      74: 858749982125745328
+    second: Body.001|Body.001|Body.001|FL_Wheel|Default Take|Layer0|Body.001|FL_Whee
+  - first:
+      74: 4028133471791727195
+    second: Body.001|Body.001|Body.001|FR_Wheel|Default Take|Layer0|Body.001|FR_Whee
+  - first:
+      74: -3131147625684491268
+    second: Body.001|Body.001|Body.001|Front_Hood|Default Take|Layer0|Body.001|Front
+  - first:
+      74: -4356141775997632249
+    second: Body.001|Body.001|Body.001|Grid|Default Take|Layer0|Body.001|Grid|Defaul
+  - first:
+      74: 8407507641795687680
+    second: Body.001|Body.001|Body.001|Left_Deflector|Default Take|Layer0|Body.001|L
+  - first:
+      74: -1161982035107412317
+    second: Body.001|Body.001|Body.001|Left_Door_Window|Default Take|Layer0|Body.001
+  - first:
+      74: 2859189877227781039
+    second: Body.001|Body.001|Body.001|Left_Door|Default Take|Layer0|Body.001|Left_D
+  - first:
+      74: -3072138261139791085
+    second: Body.001|Body.001|Body.001|LicensePlate|Default Take|Layer0|Body.001|Lic
+  - first:
+      74: -6573832236506625839
+    second: Body.001|Body.001|Body.001|LightGlass|Default Take|Layer0|Body.001|Light
+  - first:
+      74: -9114061039649892097
+    second: Body.001|Body.001|Body.001|Right_Deflector|Default Take|Layer0|Body.001|
+  - first:
+      74: -2048413686282257192
+    second: Body.001|Body.001|Body.001|Right_Door_Window|Default Take|Layer0|Body.00
+  - first:
+      74: 5088925078581492025
+    second: Body.001|Body.001|Body.001|Right_Door|Default Take|Layer0|Body.001|Right
+  - first:
+      74: 9109153145842579017
+    second: Body.001|Body.001|Body.001|RL_Wheel|Default Take|Layer0|Body.001|RL_Whee
+  - first:
+      74: 7245828384067368211
+    second: Body.001|Body.001|Body.001|RR_Wheel|Default Take|Layer0|Body.001|RR_Whee
+  - first:
+      74: 6835493181752033138
+    second: Body.001|Body.001|Body.001|Wipers|Default Take|Layer0|Body.001|Wipers|De
+  - first:
+      74: 8369133510960537148
+    second: Body.001|Body.002|Body.002|Body_Windows|Default Take|Layer0|Body.002|Bod
+  - first:
+      74: 4936799995623816716
+    second: Body.001|Body.002|Body.002|Body|Default Take|Layer0.001|Body.002|Body|De
+  - first:
+      74: 6926534132082248399
+    second: Body.001|Body.002|Body.002|Body|Default Take|Layer0.002|Body.002|Body|De
+  - first:
+      74: 8285473223843805572
+    second: Body.001|Body.002|Body.002|Body|Default Take|Layer0.003|Body.002|Body|De
+  - first:
+      74: 6532698106102192953
+    second: Body.001|Body.002|Body.002|Body|Default Take|Layer0.004|Body.002|Body|De
+  - first:
+      74: -5862437019407018415
+    second: Body.001|Body.002|Body.002|Body|Default Take|Layer0.005|Body.002|Body|De
+  - first:
+      74: 7413743995154313393
+    second: Body.001|Body.002|Body.002|Body|Default Take|Layer0.006|Body.002|Body|De
+  - first:
+      74: -858349947934418185
+    second: Body.001|Body.002|Body.002|Body|Default Take|Layer0|Body.002|Body|Defaul
+  - first:
+      74: -5185249055322573483
+    second: Body.001|Body.002|Body.002|Collider|Default Take|Layer0|Body.002|Collide
+  - first:
+      74: -8215629222974050168
+    second: Body.001|Body.002|Body.002|Engine_Hood_Glass|Default Take|Layer0|Body.00
+  - first:
+      74: 4359686097251361487
+    second: Body.001|Body.002|Body.002|Engine_Hood|Default Take|Layer0|Body.002|Engi
+  - first:
+      74: 3214051367001842538
+    second: Body.001|Body.002|Body.002|FL_Wheel|Default Take|Layer0|Body.002|FL_Whee
+  - first:
+      74: -6075298856548380252
+    second: Body.001|Body.002|Body.002|FR_Wheel|Default Take|Layer0|Body.002|FR_Whee
+  - first:
+      74: -1119451663973337088
+    second: Body.001|Body.002|Body.002|Front_Hood|Default Take|Layer0|Body.002|Front
+  - first:
+      74: -1782982470885066680
+    second: Body.001|Body.002|Body.002|Grid|Default Take|Layer0|Body.002|Grid|Defaul
+  - first:
+      74: 7831916703144084267
+    second: Body.001|Body.002|Body.002|Left_Deflector|Default Take|Layer0|Body.002|L
+  - first:
+      74: 7385885777646639577
+    second: Body.001|Body.002|Body.002|Left_Door_Window|Default Take|Layer0|Body.002
+  - first:
+      74: -1799246723079570466
+    second: Body.001|Body.002|Body.002|Left_Door|Default Take|Layer0|Body.002|Left_D
+  - first:
+      74: -7044893093547021872
+    second: Body.001|Body.002|Body.002|LicensePlate|Default Take|Layer0|Body.002|Lic
+  - first:
+      74: 440032240701827663
+    second: Body.001|Body.002|Body.002|LightGlass|Default Take|Layer0|Body.002|Light
+  - first:
+      74: 9051471761721363785
+    second: Body.001|Body.002|Body.002|Right_Deflector|Default Take|Layer0|Body.002|
+  - first:
+      74: -4357019236027158640
+    second: Body.001|Body.002|Body.002|Right_Door_Window|Default Take|Layer0|Body.00
+  - first:
+      74: -1471100343396526977
+    second: Body.001|Body.002|Body.002|Right_Door|Default Take|Layer0|Body.002|Right
+  - first:
+      74: -344313810669968999
+    second: Body.001|Body.002|Body.002|RL_Wheel|Default Take|Layer0|Body.002|RL_Whee
+  - first:
+      74: -9048001399670287256
+    second: Body.001|Body.002|Body.002|RR_Wheel|Default Take|Layer0|Body.002|RR_Whee
+  - first:
+      74: 7678034357458326884
+    second: Body.001|Body.002|Body.002|Wipers|Default Take|Layer0|Body.002|Wipers|De
+  - first:
+      74: 7724984204620753697
+    second: Body.001|Body|Body|Body_Windows|Default Take|Layer0|Body|Body_Windows|De
+  - first:
+      74: -8312192260663931790
+    second: Body.001|Body|Body|Body|Default Take|Layer0.001|Body|Body|Default Take|L
+  - first:
+      74: 5900649208824079584
+    second: Body.001|Body|Body|Body|Default Take|Layer0.002|Body|Body|Default Take|L
+  - first:
+      74: -1917342968714311362
+    second: Body.001|Body|Body|Body|Default Take|Layer0.003|Body|Body|Default Take|L
+  - first:
+      74: -153127629090207323
+    second: Body.001|Body|Body|Body|Default Take|Layer0.004|Body|Body|Default Take|L
+  - first:
+      74: 4913167527128695035
+    second: Body.001|Body|Body|Body|Default Take|Layer0.005|Body|Body|Default Take|L
+  - first:
+      74: -7463699889466885597
+    second: Body.001|Body|Body|Body|Default Take|Layer0.006|Body|Body|Default Take|L
+  - first:
+      74: 7667108930628496695
+    second: Body.001|Body|Body|Body|Default Take|Layer0|Body|Body|Default Take|Layer
+  - first:
+      74: 4490080844072784474
+    second: Body.001|Body|Body|Collider|Default Take|Layer0|Body|Collider|Default
+      Ta
+  - first:
+      74: -5492752301877370486
+    second: Body.001|Body|Body|Engine_Hood_Glass|Default Take|Layer0|Body|Engine_Hoo
+  - first:
+      74: -7526204300517822712
+    second: Body.001|Body|Body|Engine_Hood|Default Take|Layer0|Body|Engine_Hood|Defa
+  - first:
+      74: 4033190338671894250
+    second: Body.001|Body|Body|FL_Wheel|Default Take|Layer0|Body|FL_Wheel|Default
+      Ta
+  - first:
+      74: -6413997280657466924
+    second: Body.001|Body|Body|FR_Wheel|Default Take|Layer0|Body|FR_Wheel|Default
+      Ta
+  - first:
+      74: -3217306080902351042
+    second: Body.001|Body|Body|Front_Hood|Default Take|Layer0|Body|Front_Hood|Defaul
+  - first:
+      74: -7049751694664572297
+    second: Body.001|Body|Body|Grid|Default Take|Layer0|Body|Grid|Default Take|Layer
+  - first:
+      74: -4402395405719926332
+    second: Body.001|Body|Body|Left_Deflector|Default Take|Layer0|Body|Left_Deflecto
+  - first:
+      74: -121774052697380550
+    second: Body.001|Body|Body|Left_Door_Window|Default Take|Layer0|Body|Left_Door_W
+  - first:
+      74: 4585537162193527899
+    second: 'Body.001|Body|Body|Left_Door|Default Take|Layer0|Body|Left_Door|Default '
+  - first:
+      74: -5373051233171604494
+    second: Body.001|Body|Body|LicensePlate|Default Take|Layer0|Body|LicensePlate|De
+  - first:
+      74: -4531805611873552966
+    second: Body.001|Body|Body|LightGlass|Default Take|Layer0|Body|LightGlass|Defaul
+  - first:
+      74: 8355001278823581981
+    second: Body.001|Body|Body|Right_Deflector|Default Take|Layer0|Body|Right_Deflec
+  - first:
+      74: 4821088604692154128
+    second: Body.001|Body|Body|Right_Door_Window|Default Take|Layer0|Body|Right_Door
+  - first:
+      74: 5247155612927813854
+    second: Body.001|Body|Body|Right_Door|Default Take|Layer0|Body|Right_Door|Defaul
+  - first:
+      74: 6848437645580428500
+    second: Body.001|Body|Body|RL_Wheel|Default Take|Layer0|Body|RL_Wheel|Default
+      Ta
+  - first:
+      74: -2689418175111888838
+    second: Body.001|Body|Body|RR_Wheel|Default Take|Layer0|Body|RR_Wheel|Default
+      Ta
+  - first:
+      74: 521136213613902354
+    second: Body.001|Body|Body|Wipers|Default Take|Layer0|Body|Wipers|Default Take|L
+  - first:
+      74: 1037887917527717022
+    second: Body.001|FL_Wheel|FL_Wheel|Body_Windows|Default Take|Layer0|FL_Wheel|Bod
+  - first:
+      74: 3044488857866259533
+    second: Body.001|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.001|FL_Wheel|Body|De
+  - first:
+      74: 2731936538978484236
+    second: Body.001|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.002|FL_Wheel|Body|De
+  - first:
+      74: 6535834719219451527
+    second: Body.001|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.003|FL_Wheel|Body|De
+  - first:
+      74: -7233937122674886607
+    second: Body.001|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.004|FL_Wheel|Body|De
+  - first:
+      74: -7321786452595749285
+    second: Body.001|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.005|FL_Wheel|Body|De
+  - first:
+      74: -6373009313581552677
+    second: Body.001|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.006|FL_Wheel|Body|De
+  - first:
+      74: 8734523885885389297
+    second: Body.001|FL_Wheel|FL_Wheel|Body|Default Take|Layer0|FL_Wheel|Body|Defaul
+  - first:
+      74: 3443501187552622418
+    second: Body.001|FL_Wheel|FL_Wheel|Collider|Default Take|Layer0|FL_Wheel|Collide
+  - first:
+      74: -453583155849873533
+    second: Body.001|FL_Wheel|FL_Wheel|Engine_Hood_Glass|Default Take|Layer0|FL_Whee
+  - first:
+      74: -2046456995479339876
+    second: Body.001|FL_Wheel|FL_Wheel|Engine_Hood|Default Take|Layer0|FL_Wheel|Engi
+  - first:
+      74: 6049721871195356546
+    second: Body.001|FL_Wheel|FL_Wheel|FL_Wheel|Default Take|Layer0|FL_Wheel|FL_Whee
+  - first:
+      74: -8797130114530882509
+    second: Body.001|FL_Wheel|FL_Wheel|FR_Wheel|Default Take|Layer0|FL_Wheel|FR_Whee
+  - first:
+      74: -5636918405705194266
+    second: Body.001|FL_Wheel|FL_Wheel|Front_Hood|Default Take|Layer0|FL_Wheel|Front
+  - first:
+      74: -8711885858941505970
+    second: Body.001|FL_Wheel|FL_Wheel|Grid|Default Take|Layer0|FL_Wheel|Grid|Defaul
+  - first:
+      74: -53134280496567517
+    second: Body.001|FL_Wheel|FL_Wheel|Left_Deflector|Default Take|Layer0|FL_Wheel|L
+  - first:
+      74: 4899987634307145869
+    second: Body.001|FL_Wheel|FL_Wheel|Left_Door_Window|Default Take|Layer0|FL_Wheel
+  - first:
+      74: -2366680191969407188
+    second: Body.001|FL_Wheel|FL_Wheel|Left_Door|Default Take|Layer0|FL_Wheel|Left_D
+  - first:
+      74: 8937403324091861328
+    second: Body.001|FL_Wheel|FL_Wheel|LicensePlate|Default Take|Layer0|FL_Wheel|Lic
+  - first:
+      74: -7132808675517374854
+    second: Body.001|FL_Wheel|FL_Wheel|LightGlass|Default Take|Layer0|FL_Wheel|Light
+  - first:
+      74: -3272999903461827373
+    second: Body.001|FL_Wheel|FL_Wheel|Right_Deflector|Default Take|Layer0|FL_Wheel|
+  - first:
+      74: -7289136929048307521
+    second: Body.001|FL_Wheel|FL_Wheel|Right_Door_Window|Default Take|Layer0|FL_Whee
+  - first:
+      74: 4192707694733840833
+    second: Body.001|FL_Wheel|FL_Wheel|Right_Door|Default Take|Layer0|FL_Wheel|Right
+  - first:
+      74: -7921877782161628976
+    second: Body.001|FL_Wheel|FL_Wheel|RL_Wheel|Default Take|Layer0|FL_Wheel|RL_Whee
+  - first:
+      74: -1701238312727781088
+    second: Body.001|FL_Wheel|FL_Wheel|RR_Wheel|Default Take|Layer0|FL_Wheel|RR_Whee
+  - first:
+      74: -9134160125963880796
+    second: Body.001|FL_Wheel|FL_Wheel|Wipers|Default Take|Layer0|FL_Wheel|Wipers|De
+  - first:
+      74: 6776789359250469292
+    second: Body.001|FR_Wheel|FR_Wheel|Body_Windows|Default Take|Layer0|FR_Wheel|Bod
+  - first:
+      74: 7675129588897279251
+    second: Body.001|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.001|FR_Wheel|Body|De
+  - first:
+      74: 7920409469635414011
+    second: Body.001|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.002|FR_Wheel|Body|De
+  - first:
+      74: 2590806520353684071
+    second: Body.001|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.003|FR_Wheel|Body|De
+  - first:
+      74: -5731965184195271127
+    second: Body.001|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.004|FR_Wheel|Body|De
+  - first:
+      74: -4037929686722110516
+    second: Body.001|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.005|FR_Wheel|Body|De
+  - first:
+      74: 8019185368783558259
+    second: Body.001|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.006|FR_Wheel|Body|De
+  - first:
+      74: 506697284421138216
+    second: Body.001|FR_Wheel|FR_Wheel|Body|Default Take|Layer0|FR_Wheel|Body|Defaul
+  - first:
+      74: -408071206069693438
+    second: Body.001|FR_Wheel|FR_Wheel|Collider|Default Take|Layer0|FR_Wheel|Collide
+  - first:
+      74: 1488005377706988376
+    second: Body.001|FR_Wheel|FR_Wheel|Engine_Hood_Glass|Default Take|Layer0|FR_Whee
+  - first:
+      74: 1323884011411801852
+    second: Body.001|FR_Wheel|FR_Wheel|Engine_Hood|Default Take|Layer0|FR_Wheel|Engi
+  - first:
+      74: 7299657570991833983
+    second: Body.001|FR_Wheel|FR_Wheel|FL_Wheel|Default Take|Layer0|FR_Wheel|FL_Whee
+  - first:
+      74: 1210421405435737724
+    second: Body.001|FR_Wheel|FR_Wheel|FR_Wheel|Default Take|Layer0|FR_Wheel|FR_Whee
+  - first:
+      74: -2185442872811827343
+    second: Body.001|FR_Wheel|FR_Wheel|Front_Hood|Default Take|Layer0|FR_Wheel|Front
+  - first:
+      74: -4908204050687155945
+    second: Body.001|FR_Wheel|FR_Wheel|Grid|Default Take|Layer0|FR_Wheel|Grid|Defaul
+  - first:
+      74: -9019648465251039838
+    second: Body.001|FR_Wheel|FR_Wheel|Left_Deflector|Default Take|Layer0|FR_Wheel|L
+  - first:
+      74: -5026976653029029469
+    second: Body.001|FR_Wheel|FR_Wheel|Left_Door_Window|Default Take|Layer0|FR_Wheel
+  - first:
+      74: -1085935905728634647
+    second: Body.001|FR_Wheel|FR_Wheel|Left_Door|Default Take|Layer0|FR_Wheel|Left_D
+  - first:
+      74: -8724434752184836264
+    second: Body.001|FR_Wheel|FR_Wheel|LicensePlate|Default Take|Layer0|FR_Wheel|Lic
+  - first:
+      74: 4194899855678293837
+    second: Body.001|FR_Wheel|FR_Wheel|LightGlass|Default Take|Layer0|FR_Wheel|Light
+  - first:
+      74: -7525596396511140546
+    second: Body.001|FR_Wheel|FR_Wheel|Right_Deflector|Default Take|Layer0|FR_Wheel|
+  - first:
+      74: 2834963162977891422
+    second: Body.001|FR_Wheel|FR_Wheel|Right_Door_Window|Default Take|Layer0|FR_Whee
+  - first:
+      74: 2803186429516988030
+    second: Body.001|FR_Wheel|FR_Wheel|Right_Door|Default Take|Layer0|FR_Wheel|Right
+  - first:
+      74: -2305465480405109025
+    second: Body.001|FR_Wheel|FR_Wheel|RL_Wheel|Default Take|Layer0|FR_Wheel|RL_Whee
+  - first:
+      74: -4017939940764472723
+    second: Body.001|FR_Wheel|FR_Wheel|RR_Wheel|Default Take|Layer0|FR_Wheel|RR_Whee
+  - first:
+      74: -7750442829521218452
+    second: Body.001|FR_Wheel|FR_Wheel|Wipers|Default Take|Layer0|FR_Wheel|Wipers|De
+  - first:
+      74: 5447514150081251363
+    second: Body.001|RL_Wheel|RL_Wheel|Body_Windows|Default Take|Layer0|RL_Wheel|Bod
+  - first:
+      74: -2202455975999681907
+    second: Body.001|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.001|RL_Wheel|Body|De
+  - first:
+      74: 7422348767540887176
+    second: Body.001|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.002|RL_Wheel|Body|De
+  - first:
+      74: 5961014791003740969
+    second: Body.001|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.003|RL_Wheel|Body|De
+  - first:
+      74: -2767350959853464944
+    second: Body.001|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.004|RL_Wheel|Body|De
+  - first:
+      74: -7547168862164512966
+    second: Body.001|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.005|RL_Wheel|Body|De
+  - first:
+      74: 6819086593166755923
+    second: Body.001|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.006|RL_Wheel|Body|De
+  - first:
+      74: -6126118815023680455
+    second: Body.001|RL_Wheel|RL_Wheel|Body|Default Take|Layer0|RL_Wheel|Body|Defaul
+  - first:
+      74: -7096687196044211321
+    second: Body.001|RL_Wheel|RL_Wheel|Collider|Default Take|Layer0|RL_Wheel|Collide
+  - first:
+      74: 1643259865952897683
+    second: Body.001|RL_Wheel|RL_Wheel|Engine_Hood_Glass|Default Take|Layer0|RL_Whee
+  - first:
+      74: -8620651028911996278
+    second: Body.001|RL_Wheel|RL_Wheel|Engine_Hood|Default Take|Layer0|RL_Wheel|Engi
+  - first:
+      74: -5365496862856261661
+    second: Body.001|RL_Wheel|RL_Wheel|FL_Wheel|Default Take|Layer0|RL_Wheel|FL_Whee
+  - first:
+      74: 6229001385468824375
+    second: Body.001|RL_Wheel|RL_Wheel|FR_Wheel|Default Take|Layer0|RL_Wheel|FR_Whee
+  - first:
+      74: -9214231107439843794
+    second: Body.001|RL_Wheel|RL_Wheel|Front_Hood|Default Take|Layer0|RL_Wheel|Front
+  - first:
+      74: -2575470131548254325
+    second: Body.001|RL_Wheel|RL_Wheel|Grid|Default Take|Layer0|RL_Wheel|Grid|Defaul
+  - first:
+      74: 3726448340946315501
+    second: Body.001|RL_Wheel|RL_Wheel|Left_Deflector|Default Take|Layer0|RL_Wheel|L
+  - first:
+      74: -1446061962704893066
+    second: Body.001|RL_Wheel|RL_Wheel|Left_Door_Window|Default Take|Layer0|RL_Wheel
+  - first:
+      74: 3249095473382659748
+    second: Body.001|RL_Wheel|RL_Wheel|Left_Door|Default Take|Layer0|RL_Wheel|Left_D
+  - first:
+      74: -6191625698134275290
+    second: Body.001|RL_Wheel|RL_Wheel|LicensePlate|Default Take|Layer0|RL_Wheel|Lic
+  - first:
+      74: -4634750689079704573
+    second: Body.001|RL_Wheel|RL_Wheel|LightGlass|Default Take|Layer0|RL_Wheel|Light
+  - first:
+      74: -326119223816569398
+    second: Body.001|RL_Wheel|RL_Wheel|Right_Deflector|Default Take|Layer0|RL_Wheel|
+  - first:
+      74: -221911574352049290
+    second: Body.001|RL_Wheel|RL_Wheel|Right_Door_Window|Default Take|Layer0|RL_Whee
+  - first:
+      74: 4642634108397149468
+    second: Body.001|RL_Wheel|RL_Wheel|Right_Door|Default Take|Layer0|RL_Wheel|Right
+  - first:
+      74: 6000672776302784693
+    second: Body.001|RL_Wheel|RL_Wheel|RL_Wheel|Default Take|Layer0|RL_Wheel|RL_Whee
+  - first:
+      74: 9046949846941315092
+    second: Body.001|RL_Wheel|RL_Wheel|RR_Wheel|Default Take|Layer0|RL_Wheel|RR_Whee
+  - first:
+      74: 2099916964166160686
+    second: Body.001|RL_Wheel|RL_Wheel|Wipers|Default Take|Layer0|RL_Wheel|Wipers|De
+  - first:
+      74: 3152337274281234239
+    second: Body.001|RR_Wheel|RR_Wheel|Body_Windows|Default Take|Layer0|RR_Wheel|Bod
+  - first:
+      74: -2512096408005084346
+    second: Body.001|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.001|RR_Wheel|Body|De
+  - first:
+      74: 3604659481932954597
+    second: Body.001|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.002|RR_Wheel|Body|De
+  - first:
+      74: -1926439066432180604
+    second: Body.001|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.003|RR_Wheel|Body|De
+  - first:
+      74: 3576360211146214477
+    second: Body.001|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.004|RR_Wheel|Body|De
+  - first:
+      74: -1277125329012939393
+    second: Body.001|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.005|RR_Wheel|Body|De
+  - first:
+      74: -7667996824075240512
+    second: Body.001|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.006|RR_Wheel|Body|De
+  - first:
+      74: -3753301374752317242
+    second: Body.001|RR_Wheel|RR_Wheel|Body|Default Take|Layer0|RR_Wheel|Body|Defaul
+  - first:
+      74: -6637972496298943109
+    second: Body.001|RR_Wheel|RR_Wheel|Collider|Default Take|Layer0|RR_Wheel|Collide
+  - first:
+      74: 8205337905106383023
+    second: Body.001|RR_Wheel|RR_Wheel|Engine_Hood_Glass|Default Take|Layer0|RR_Whee
+  - first:
+      74: -7580254362009287689
+    second: Body.001|RR_Wheel|RR_Wheel|Engine_Hood|Default Take|Layer0|RR_Wheel|Engi
+  - first:
+      74: -5215551042014798527
+    second: Body.001|RR_Wheel|RR_Wheel|FL_Wheel|Default Take|Layer0|RR_Wheel|FL_Whee
+  - first:
+      74: 7821826762108697291
+    second: Body.001|RR_Wheel|RR_Wheel|FR_Wheel|Default Take|Layer0|RR_Wheel|FR_Whee
+  - first:
+      74: 3423737720805069367
+    second: Body.001|RR_Wheel|RR_Wheel|Front_Hood|Default Take|Layer0|RR_Wheel|Front
+  - first:
+      74: -1958037260109931035
+    second: Body.001|RR_Wheel|RR_Wheel|Grid|Default Take|Layer0|RR_Wheel|Grid|Defaul
+  - first:
+      74: 8285986765091545831
+    second: Body.001|RR_Wheel|RR_Wheel|Left_Deflector|Default Take|Layer0|RR_Wheel|L
+  - first:
+      74: 2873938788193026042
+    second: Body.001|RR_Wheel|RR_Wheel|Left_Door_Window|Default Take|Layer0|RR_Wheel
+  - first:
+      74: -530564246526079001
+    second: Body.001|RR_Wheel|RR_Wheel|Left_Door|Default Take|Layer0|RR_Wheel|Left_D
+  - first:
+      74: -1102729145704071521
+    second: Body.001|RR_Wheel|RR_Wheel|LicensePlate|Default Take|Layer0|RR_Wheel|Lic
+  - first:
+      74: -1049266778629939781
+    second: Body.001|RR_Wheel|RR_Wheel|LightGlass|Default Take|Layer0|RR_Wheel|Light
+  - first:
+      74: 4241283238069359033
+    second: Body.001|RR_Wheel|RR_Wheel|Right_Deflector|Default Take|Layer0|RR_Wheel|
+  - first:
+      74: 1084257113700362073
+    second: Body.001|RR_Wheel|RR_Wheel|Right_Door_Window|Default Take|Layer0|RR_Whee
+  - first:
+      74: 6152197416804538104
+    second: Body.001|RR_Wheel|RR_Wheel|Right_Door|Default Take|Layer0|RR_Wheel|Right
+  - first:
+      74: -5977589353896753267
+    second: Body.001|RR_Wheel|RR_Wheel|RL_Wheel|Default Take|Layer0|RR_Wheel|RL_Whee
+  - first:
+      74: 1938485682890553625
+    second: Body.001|RR_Wheel|RR_Wheel|RR_Wheel|Default Take|Layer0|RR_Wheel|RR_Whee
+  - first:
+      74: 231175039364823880
+    second: Body.001|RR_Wheel|RR_Wheel|Wipers|Default Take|Layer0|RR_Wheel|Wipers|De
+  - first:
+      74: -4973829564859444755
+    second: Body.002|Body.001|Body.001|Body_Windows|Default Take|Layer0|Body.001|Bod
+  - first:
+      74: -1973574556692672433
+    second: Body.002|Body.001|Body.001|Body|Default Take|Layer0.001|Body.001|Body|De
+  - first:
+      74: -4642543147596489764
+    second: Body.002|Body.001|Body.001|Body|Default Take|Layer0.002|Body.001|Body|De
+  - first:
+      74: 252301962616783570
+    second: Body.002|Body.001|Body.001|Body|Default Take|Layer0.003|Body.001|Body|De
+  - first:
+      74: -1850596692143083109
+    second: Body.002|Body.001|Body.001|Body|Default Take|Layer0.004|Body.001|Body|De
+  - first:
+      74: 4500276530914898918
+    second: Body.002|Body.001|Body.001|Body|Default Take|Layer0.005|Body.001|Body|De
+  - first:
+      74: -3722471924345444735
+    second: Body.002|Body.001|Body.001|Body|Default Take|Layer0.006|Body.001|Body|De
+  - first:
+      74: -4890562822522099357
+    second: Body.002|Body.001|Body.001|Body|Default Take|Layer0|Body.001|Body|Defaul
+  - first:
+      74: -8309744059099302528
+    second: Body.002|Body.001|Body.001|Collider|Default Take|Layer0|Body.001|Collide
+  - first:
+      74: 2705486048247029190
+    second: Body.002|Body.001|Body.001|Engine_Hood_Glass|Default Take|Layer0|Body.00
+  - first:
+      74: -5026519290350094343
+    second: Body.002|Body.001|Body.001|Engine_Hood|Default Take|Layer0|Body.001|Engi
+  - first:
+      74: -3092676268419170258
+    second: Body.002|Body.001|Body.001|FL_Wheel|Default Take|Layer0|Body.001|FL_Whee
+  - first:
+      74: -5785061988770156489
+    second: Body.002|Body.001|Body.001|FR_Wheel|Default Take|Layer0|Body.001|FR_Whee
+  - first:
+      74: -2625278327155103329
+    second: Body.002|Body.001|Body.001|Front_Hood|Default Take|Layer0|Body.001|Front
+  - first:
+      74: 1822542830023315901
+    second: Body.002|Body.001|Body.001|Grid|Default Take|Layer0|Body.001|Grid|Defaul
+  - first:
+      74: -7936837990601019922
+    second: Body.002|Body.001|Body.001|Left_Deflector|Default Take|Layer0|Body.001|L
+  - first:
+      74: -5772117989021317519
+    second: Body.002|Body.001|Body.001|Left_Door_Window|Default Take|Layer0|Body.001
+  - first:
+      74: -8006263199542786356
+    second: Body.002|Body.001|Body.001|Left_Door|Default Take|Layer0|Body.001|Left_D
+  - first:
+      74: -2782499167988049305
+    second: Body.002|Body.001|Body.001|LicensePlate|Default Take|Layer0|Body.001|Lic
+  - first:
+      74: 3705400489547543525
+    second: Body.002|Body.001|Body.001|LightGlass|Default Take|Layer0|Body.001|Light
+  - first:
+      74: 2072545396163279086
+    second: Body.002|Body.001|Body.001|Right_Deflector|Default Take|Layer0|Body.001|
+  - first:
+      74: -8572259178444036201
+    second: Body.002|Body.001|Body.001|Right_Door_Window|Default Take|Layer0|Body.00
+  - first:
+      74: 3975708786554056200
+    second: Body.002|Body.001|Body.001|Right_Door|Default Take|Layer0|Body.001|Right
+  - first:
+      74: -2064189602421780383
+    second: Body.002|Body.001|Body.001|RL_Wheel|Default Take|Layer0|Body.001|RL_Whee
+  - first:
+      74: 5062481325563625621
+    second: Body.002|Body.001|Body.001|RR_Wheel|Default Take|Layer0|Body.001|RR_Whee
+  - first:
+      74: -2264285008012111954
+    second: Body.002|Body.001|Body.001|Wipers|Default Take|Layer0|Body.001|Wipers|De
+  - first:
+      74: 743248014213416575
+    second: Body.002|Body.002|Body.002|Body_Windows|Default Take|Layer0|Body.002|Bod
+  - first:
+      74: -2510870128281458430
+    second: Body.002|Body.002|Body.002|Body|Default Take|Layer0.001|Body.002|Body|De
+  - first:
+      74: -6951660277756796138
+    second: Body.002|Body.002|Body.002|Body|Default Take|Layer0.002|Body.002|Body|De
+  - first:
+      74: 1293722152254205201
+    second: Body.002|Body.002|Body.002|Body|Default Take|Layer0.003|Body.002|Body|De
+  - first:
+      74: -3189206411784708459
+    second: Body.002|Body.002|Body.002|Body|Default Take|Layer0.004|Body.002|Body|De
+  - first:
+      74: -4989433640335134387
+    second: Body.002|Body.002|Body.002|Body|Default Take|Layer0.005|Body.002|Body|De
+  - first:
+      74: 6256643338451635328
+    second: Body.002|Body.002|Body.002|Body|Default Take|Layer0.006|Body.002|Body|De
+  - first:
+      74: 2148745647509424482
+    second: Body.002|Body.002|Body.002|Body|Default Take|Layer0|Body.002|Body|Defaul
+  - first:
+      74: -4985596919082116313
+    second: Body.002|Body.002|Body.002|Collider|Default Take|Layer0|Body.002|Collide
+  - first:
+      74: 1575584416198017937
+    second: Body.002|Body.002|Body.002|Engine_Hood_Glass|Default Take|Layer0|Body.00
+  - first:
+      74: 1820113292727548193
+    second: Body.002|Body.002|Body.002|Engine_Hood|Default Take|Layer0|Body.002|Engi
+  - first:
+      74: 2931991903227282432
+    second: Body.002|Body.002|Body.002|FL_Wheel|Default Take|Layer0|Body.002|FL_Whee
+  - first:
+      74: 5915213542178122070
+    second: Body.002|Body.002|Body.002|FR_Wheel|Default Take|Layer0|Body.002|FR_Whee
+  - first:
+      74: 6078595134664229655
+    second: Body.002|Body.002|Body.002|Front_Hood|Default Take|Layer0|Body.002|Front
+  - first:
+      74: 8080190863102830146
+    second: Body.002|Body.002|Body.002|Grid|Default Take|Layer0|Body.002|Grid|Defaul
+  - first:
+      74: 5066716900978554484
+    second: Body.002|Body.002|Body.002|Left_Deflector|Default Take|Layer0|Body.002|L
+  - first:
+      74: 3153574855645907830
+    second: Body.002|Body.002|Body.002|Left_Door_Window|Default Take|Layer0|Body.002
+  - first:
+      74: 912729189653033829
+    second: Body.002|Body.002|Body.002|Left_Door|Default Take|Layer0|Body.002|Left_D
+  - first:
+      74: 8901178229813405713
+    second: Body.002|Body.002|Body.002|LicensePlate|Default Take|Layer0|Body.002|Lic
+  - first:
+      74: 6340863394686336554
+    second: Body.002|Body.002|Body.002|LightGlass|Default Take|Layer0|Body.002|Light
+  - first:
+      74: -1409907631666697083
+    second: Body.002|Body.002|Body.002|Right_Deflector|Default Take|Layer0|Body.002|
+  - first:
+      74: -4801422693753435168
+    second: Body.002|Body.002|Body.002|Right_Door_Window|Default Take|Layer0|Body.00
+  - first:
+      74: 8912248831293327559
+    second: Body.002|Body.002|Body.002|Right_Door|Default Take|Layer0|Body.002|Right
+  - first:
+      74: 3038270088990335922
+    second: Body.002|Body.002|Body.002|RL_Wheel|Default Take|Layer0|Body.002|RL_Whee
+  - first:
+      74: 3325678116722796147
+    second: Body.002|Body.002|Body.002|RR_Wheel|Default Take|Layer0|Body.002|RR_Whee
+  - first:
+      74: 7355275032034287719
+    second: Body.002|Body.002|Body.002|Wipers|Default Take|Layer0|Body.002|Wipers|De
+  - first:
+      74: -7364825246549648635
+    second: Body.002|Body|Body|Body_Windows|Default Take|Layer0|Body|Body_Windows|De
+  - first:
+      74: -4367619767504985595
+    second: Body.002|Body|Body|Body|Default Take|Layer0.001|Body|Body|Default Take|L
+  - first:
+      74: -3955855726258574306
+    second: Body.002|Body|Body|Body|Default Take|Layer0.002|Body|Body|Default Take|L
+  - first:
+      74: 5058774734987462524
+    second: Body.002|Body|Body|Body|Default Take|Layer0.003|Body|Body|Default Take|L
+  - first:
+      74: 8720429660361310950
+    second: Body.002|Body|Body|Body|Default Take|Layer0.004|Body|Body|Default Take|L
+  - first:
+      74: -5685466388751611767
+    second: Body.002|Body|Body|Body|Default Take|Layer0.005|Body|Body|Default Take|L
+  - first:
+      74: 500366030266999627
+    second: Body.002|Body|Body|Body|Default Take|Layer0.006|Body|Body|Default Take|L
+  - first:
+      74: -7495225789947803725
+    second: Body.002|Body|Body|Body|Default Take|Layer0|Body|Body|Default Take|Layer
+  - first:
+      74: 3073692055806334779
+    second: Body.002|Body|Body|Collider|Default Take|Layer0|Body|Collider|Default
+      Ta
+  - first:
+      74: 5686096530708540526
+    second: Body.002|Body|Body|Engine_Hood_Glass|Default Take|Layer0|Body|Engine_Hoo
+  - first:
+      74: -3615048283548176071
+    second: Body.002|Body|Body|Engine_Hood|Default Take|Layer0|Body|Engine_Hood|Defa
+  - first:
+      74: 7682543765957935925
+    second: Body.002|Body|Body|FL_Wheel|Default Take|Layer0|Body|FL_Wheel|Default
+      Ta
+  - first:
+      74: -1805386094173847097
+    second: Body.002|Body|Body|FR_Wheel|Default Take|Layer0|Body|FR_Wheel|Default
+      Ta
+  - first:
+      74: -1199843235030433438
+    second: Body.002|Body|Body|Front_Hood|Default Take|Layer0|Body|Front_Hood|Defaul
+  - first:
+      74: 5552258426409885477
+    second: Body.002|Body|Body|Grid|Default Take|Layer0|Body|Grid|Default Take|Layer
+  - first:
+      74: 7179702346371642177
+    second: Body.002|Body|Body|Left_Deflector|Default Take|Layer0|Body|Left_Deflecto
+  - first:
+      74: 1586113887755813189
+    second: Body.002|Body|Body|Left_Door_Window|Default Take|Layer0|Body|Left_Door_W
+  - first:
+      74: -8414670650743192866
+    second: 'Body.002|Body|Body|Left_Door|Default Take|Layer0|Body|Left_Door|Default '
+  - first:
+      74: -186257922937539242
+    second: Body.002|Body|Body|LicensePlate|Default Take|Layer0|Body|LicensePlate|De
+  - first:
+      74: 3996365591802939089
+    second: Body.002|Body|Body|LightGlass|Default Take|Layer0|Body|LightGlass|Defaul
+  - first:
+      74: 8923440414059174237
+    second: Body.002|Body|Body|Right_Deflector|Default Take|Layer0|Body|Right_Deflec
+  - first:
+      74: -7128026994438416082
+    second: Body.002|Body|Body|Right_Door_Window|Default Take|Layer0|Body|Right_Door
+  - first:
+      74: -8522058871663362990
+    second: Body.002|Body|Body|Right_Door|Default Take|Layer0|Body|Right_Door|Defaul
+  - first:
+      74: -6942877401715992642
+    second: Body.002|Body|Body|RL_Wheel|Default Take|Layer0|Body|RL_Wheel|Default
+      Ta
+  - first:
+      74: 4758258044786271040
+    second: Body.002|Body|Body|RR_Wheel|Default Take|Layer0|Body|RR_Wheel|Default
+      Ta
+  - first:
+      74: -4695311354224009826
+    second: Body.002|Body|Body|Wipers|Default Take|Layer0|Body|Wipers|Default Take|L
+  - first:
+      74: 983888447963021881
+    second: Body.002|FL_Wheel|FL_Wheel|Body_Windows|Default Take|Layer0|FL_Wheel|Bod
+  - first:
+      74: -5018017925390003730
+    second: Body.002|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.001|FL_Wheel|Body|De
+  - first:
+      74: -8792947031725960111
+    second: Body.002|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.002|FL_Wheel|Body|De
+  - first:
+      74: 5745804459283246559
+    second: Body.002|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.003|FL_Wheel|Body|De
+  - first:
+      74: -6355037077962068312
+    second: Body.002|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.004|FL_Wheel|Body|De
+  - first:
+      74: -3122169345701348328
+    second: Body.002|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.005|FL_Wheel|Body|De
+  - first:
+      74: 6391215092163570661
+    second: Body.002|FL_Wheel|FL_Wheel|Body|Default Take|Layer0.006|FL_Wheel|Body|De
+  - first:
+      74: 7594555816177882646
+    second: Body.002|FL_Wheel|FL_Wheel|Body|Default Take|Layer0|FL_Wheel|Body|Defaul
+  - first:
+      74: -12533533284143970
+    second: Body.002|FL_Wheel|FL_Wheel|Collider|Default Take|Layer0|FL_Wheel|Collide
+  - first:
+      74: 6894092999018241870
+    second: Body.002|FL_Wheel|FL_Wheel|Engine_Hood_Glass|Default Take|Layer0|FL_Whee
+  - first:
+      74: 8074221110149600002
+    second: Body.002|FL_Wheel|FL_Wheel|Engine_Hood|Default Take|Layer0|FL_Wheel|Engi
+  - first:
+      74: -3118274019297395840
+    second: Body.002|FL_Wheel|FL_Wheel|FL_Wheel|Default Take|Layer0|FL_Wheel|FL_Whee
+  - first:
+      74: 5116803616684996409
+    second: Body.002|FL_Wheel|FL_Wheel|FR_Wheel|Default Take|Layer0|FL_Wheel|FR_Whee
+  - first:
+      74: 3235977708274105929
+    second: Body.002|FL_Wheel|FL_Wheel|Front_Hood|Default Take|Layer0|FL_Wheel|Front
+  - first:
+      74: 5290408922871068043
+    second: Body.002|FL_Wheel|FL_Wheel|Grid|Default Take|Layer0|FL_Wheel|Grid|Defaul
+  - first:
+      74: -4587492955367561298
+    second: Body.002|FL_Wheel|FL_Wheel|Left_Deflector|Default Take|Layer0|FL_Wheel|L
+  - first:
+      74: -5967672342449454612
+    second: Body.002|FL_Wheel|FL_Wheel|Left_Door_Window|Default Take|Layer0|FL_Wheel
+  - first:
+      74: -892520088465781547
+    second: Body.002|FL_Wheel|FL_Wheel|Left_Door|Default Take|Layer0|FL_Wheel|Left_D
+  - first:
+      74: 6773359032578825903
+    second: Body.002|FL_Wheel|FL_Wheel|LicensePlate|Default Take|Layer0|FL_Wheel|Lic
+  - first:
+      74: -2226445311838684982
+    second: Body.002|FL_Wheel|FL_Wheel|LightGlass|Default Take|Layer0|FL_Wheel|Light
+  - first:
+      74: 4200591189931898550
+    second: Body.002|FL_Wheel|FL_Wheel|Right_Deflector|Default Take|Layer0|FL_Wheel|
+  - first:
+      74: -2186723154173129661
+    second: Body.002|FL_Wheel|FL_Wheel|Right_Door_Window|Default Take|Layer0|FL_Whee
+  - first:
+      74: -912673069137006604
+    second: Body.002|FL_Wheel|FL_Wheel|Right_Door|Default Take|Layer0|FL_Wheel|Right
+  - first:
+      74: 5729554838681668408
+    second: Body.002|FL_Wheel|FL_Wheel|RL_Wheel|Default Take|Layer0|FL_Wheel|RL_Whee
+  - first:
+      74: 1831188381264732741
+    second: Body.002|FL_Wheel|FL_Wheel|RR_Wheel|Default Take|Layer0|FL_Wheel|RR_Whee
+  - first:
+      74: 8131920684817535204
+    second: Body.002|FL_Wheel|FL_Wheel|Wipers|Default Take|Layer0|FL_Wheel|Wipers|De
+  - first:
+      74: 682389365315543868
+    second: Body.002|FR_Wheel|FR_Wheel|Body_Windows|Default Take|Layer0|FR_Wheel|Bod
+  - first:
+      74: 7974766743976657871
+    second: Body.002|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.001|FR_Wheel|Body|De
+  - first:
+      74: -8324811754297095036
+    second: Body.002|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.002|FR_Wheel|Body|De
+  - first:
+      74: 125004516489735681
+    second: Body.002|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.003|FR_Wheel|Body|De
+  - first:
+      74: -5241100374221026746
+    second: Body.002|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.004|FR_Wheel|Body|De
+  - first:
+      74: -3136551625851834063
+    second: Body.002|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.005|FR_Wheel|Body|De
+  - first:
+      74: 2254053827177615364
+    second: Body.002|FR_Wheel|FR_Wheel|Body|Default Take|Layer0.006|FR_Wheel|Body|De
+  - first:
+      74: -3115719682509324972
+    second: Body.002|FR_Wheel|FR_Wheel|Body|Default Take|Layer0|FR_Wheel|Body|Defaul
+  - first:
+      74: -4250994616598265241
+    second: Body.002|FR_Wheel|FR_Wheel|Collider|Default Take|Layer0|FR_Wheel|Collide
+  - first:
+      74: 4454789113569508532
+    second: Body.002|FR_Wheel|FR_Wheel|Engine_Hood_Glass|Default Take|Layer0|FR_Whee
+  - first:
+      74: -4285957408653231294
+    second: Body.002|FR_Wheel|FR_Wheel|Engine_Hood|Default Take|Layer0|FR_Wheel|Engi
+  - first:
+      74: 6551922438770630270
+    second: Body.002|FR_Wheel|FR_Wheel|FL_Wheel|Default Take|Layer0|FR_Wheel|FL_Whee
+  - first:
+      74: 8437496271535364515
+    second: Body.002|FR_Wheel|FR_Wheel|FR_Wheel|Default Take|Layer0|FR_Wheel|FR_Whee
+  - first:
+      74: 3232295771874850502
+    second: Body.002|FR_Wheel|FR_Wheel|Front_Hood|Default Take|Layer0|FR_Wheel|Front
+  - first:
+      74: -5111468283862314711
+    second: Body.002|FR_Wheel|FR_Wheel|Grid|Default Take|Layer0|FR_Wheel|Grid|Defaul
+  - first:
+      74: 4113558678564533467
+    second: Body.002|FR_Wheel|FR_Wheel|Left_Deflector|Default Take|Layer0|FR_Wheel|L
+  - first:
+      74: 6295110722883091462
+    second: Body.002|FR_Wheel|FR_Wheel|Left_Door_Window|Default Take|Layer0|FR_Wheel
+  - first:
+      74: 4218660556805660743
+    second: Body.002|FR_Wheel|FR_Wheel|Left_Door|Default Take|Layer0|FR_Wheel|Left_D
+  - first:
+      74: -4072333638226782802
+    second: Body.002|FR_Wheel|FR_Wheel|LicensePlate|Default Take|Layer0|FR_Wheel|Lic
+  - first:
+      74: -3700416000271462698
+    second: Body.002|FR_Wheel|FR_Wheel|LightGlass|Default Take|Layer0|FR_Wheel|Light
+  - first:
+      74: 8793389693455256250
+    second: Body.002|FR_Wheel|FR_Wheel|Right_Deflector|Default Take|Layer0|FR_Wheel|
+  - first:
+      74: -4351211748018226642
+    second: Body.002|FR_Wheel|FR_Wheel|Right_Door_Window|Default Take|Layer0|FR_Whee
+  - first:
+      74: -8014434749713129727
+    second: Body.002|FR_Wheel|FR_Wheel|Right_Door|Default Take|Layer0|FR_Wheel|Right
+  - first:
+      74: 2366677114808740280
+    second: Body.002|FR_Wheel|FR_Wheel|RL_Wheel|Default Take|Layer0|FR_Wheel|RL_Whee
+  - first:
+      74: -8378740763047133536
+    second: Body.002|FR_Wheel|FR_Wheel|RR_Wheel|Default Take|Layer0|FR_Wheel|RR_Whee
+  - first:
+      74: 2553978153925672545
+    second: Body.002|FR_Wheel|FR_Wheel|Wipers|Default Take|Layer0|FR_Wheel|Wipers|De
+  - first:
+      74: -7926040504165325924
+    second: Body.002|RL_Wheel|RL_Wheel|Body_Windows|Default Take|Layer0|RL_Wheel|Bod
+  - first:
+      74: 5692043224887754672
+    second: Body.002|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.001|RL_Wheel|Body|De
+  - first:
+      74: -2567948102378200168
+    second: Body.002|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.002|RL_Wheel|Body|De
+  - first:
+      74: 4946081488785945813
+    second: Body.002|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.003|RL_Wheel|Body|De
+  - first:
+      74: 7349525070360151899
+    second: Body.002|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.004|RL_Wheel|Body|De
+  - first:
+      74: 8528216711443456988
+    second: Body.002|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.005|RL_Wheel|Body|De
+  - first:
+      74: 1543934447973405913
+    second: Body.002|RL_Wheel|RL_Wheel|Body|Default Take|Layer0.006|RL_Wheel|Body|De
+  - first:
+      74: 5106571811058125487
+    second: Body.002|RL_Wheel|RL_Wheel|Body|Default Take|Layer0|RL_Wheel|Body|Defaul
+  - first:
+      74: -1104423365937672485
+    second: Body.002|RL_Wheel|RL_Wheel|Collider|Default Take|Layer0|RL_Wheel|Collide
+  - first:
+      74: -44122044270315853
+    second: Body.002|RL_Wheel|RL_Wheel|Engine_Hood_Glass|Default Take|Layer0|RL_Whee
+  - first:
+      74: -5083975501647558839
+    second: Body.002|RL_Wheel|RL_Wheel|Engine_Hood|Default Take|Layer0|RL_Wheel|Engi
+  - first:
+      74: 3510408144609817691
+    second: Body.002|RL_Wheel|RL_Wheel|FL_Wheel|Default Take|Layer0|RL_Wheel|FL_Whee
+  - first:
+      74: -4032314654773487100
+    second: Body.002|RL_Wheel|RL_Wheel|FR_Wheel|Default Take|Layer0|RL_Wheel|FR_Whee
+  - first:
+      74: -8164476828314253102
+    second: Body.002|RL_Wheel|RL_Wheel|Front_Hood|Default Take|Layer0|RL_Wheel|Front
+  - first:
+      74: 8848507679675278257
+    second: Body.002|RL_Wheel|RL_Wheel|Grid|Default Take|Layer0|RL_Wheel|Grid|Defaul
+  - first:
+      74: 2555314929598768566
+    second: Body.002|RL_Wheel|RL_Wheel|Left_Deflector|Default Take|Layer0|RL_Wheel|L
+  - first:
+      74: 6826347591819545987
+    second: Body.002|RL_Wheel|RL_Wheel|Left_Door_Window|Default Take|Layer0|RL_Wheel
+  - first:
+      74: 9005488723056814883
+    second: Body.002|RL_Wheel|RL_Wheel|Left_Door|Default Take|Layer0|RL_Wheel|Left_D
+  - first:
+      74: -4137396868586630457
+    second: Body.002|RL_Wheel|RL_Wheel|LicensePlate|Default Take|Layer0|RL_Wheel|Lic
+  - first:
+      74: 7376188296058560798
+    second: Body.002|RL_Wheel|RL_Wheel|LightGlass|Default Take|Layer0|RL_Wheel|Light
+  - first:
+      74: 7584090838493124587
+    second: Body.002|RL_Wheel|RL_Wheel|Right_Deflector|Default Take|Layer0|RL_Wheel|
+  - first:
+      74: -1543539643215578988
+    second: Body.002|RL_Wheel|RL_Wheel|Right_Door_Window|Default Take|Layer0|RL_Whee
+  - first:
+      74: -3069201281490018310
+    second: Body.002|RL_Wheel|RL_Wheel|Right_Door|Default Take|Layer0|RL_Wheel|Right
+  - first:
+      74: -5573538112022430954
+    second: Body.002|RL_Wheel|RL_Wheel|RL_Wheel|Default Take|Layer0|RL_Wheel|RL_Whee
+  - first:
+      74: -1558691474786651364
+    second: Body.002|RL_Wheel|RL_Wheel|RR_Wheel|Default Take|Layer0|RL_Wheel|RR_Whee
+  - first:
+      74: -3639554897116669585
+    second: Body.002|RL_Wheel|RL_Wheel|Wipers|Default Take|Layer0|RL_Wheel|Wipers|De
+  - first:
+      74: 1401439564689940131
+    second: Body.002|RR_Wheel|RR_Wheel|Body_Windows|Default Take|Layer0|RR_Wheel|Bod
+  - first:
+      74: -6909859781894839455
+    second: Body.002|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.001|RR_Wheel|Body|De
+  - first:
+      74: -5380175844364646779
+    second: Body.002|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.002|RR_Wheel|Body|De
+  - first:
+      74: 8099288782323243258
+    second: Body.002|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.003|RR_Wheel|Body|De
+  - first:
+      74: 5443826481950458497
+    second: Body.002|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.004|RR_Wheel|Body|De
+  - first:
+      74: 2636544191907606280
+    second: Body.002|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.005|RR_Wheel|Body|De
+  - first:
+      74: -7057618978554251346
+    second: Body.002|RR_Wheel|RR_Wheel|Body|Default Take|Layer0.006|RR_Wheel|Body|De
+  - first:
+      74: 5996565828789410145
+    second: Body.002|RR_Wheel|RR_Wheel|Body|Default Take|Layer0|RR_Wheel|Body|Defaul
+  - first:
+      74: -6821782078901243718
+    second: Body.002|RR_Wheel|RR_Wheel|Collider|Default Take|Layer0|RR_Wheel|Collide
+  - first:
+      74: 1513650269110601317
+    second: Body.002|RR_Wheel|RR_Wheel|Engine_Hood_Glass|Default Take|Layer0|RR_Whee
+  - first:
+      74: -6441843766261995518
+    second: Body.002|RR_Wheel|RR_Wheel|Engine_Hood|Default Take|Layer0|RR_Wheel|Engi
+  - first:
+      74: 1253028196646928304
+    second: Body.002|RR_Wheel|RR_Wheel|FL_Wheel|Default Take|Layer0|RR_Wheel|FL_Whee
+  - first:
+      74: -8804231410808096095
+    second: Body.002|RR_Wheel|RR_Wheel|FR_Wheel|Default Take|Layer0|RR_Wheel|FR_Whee
+  - first:
+      74: 5131740173401623128
+    second: Body.002|RR_Wheel|RR_Wheel|Front_Hood|Default Take|Layer0|RR_Wheel|Front
+  - first:
+      74: 6674295315235369198
+    second: Body.002|RR_Wheel|RR_Wheel|Grid|Default Take|Layer0|RR_Wheel|Grid|Defaul
+  - first:
+      74: 931180481752070433
+    second: Body.002|RR_Wheel|RR_Wheel|Left_Deflector|Default Take|Layer0|RR_Wheel|L
+  - first:
+      74: 5416486474199697646
+    second: Body.002|RR_Wheel|RR_Wheel|Left_Door_Window|Default Take|Layer0|RR_Wheel
+  - first:
+      74: -7546350835497002389
+    second: Body.002|RR_Wheel|RR_Wheel|Left_Door|Default Take|Layer0|RR_Wheel|Left_D
+  - first:
+      74: 2711737849612799497
+    second: Body.002|RR_Wheel|RR_Wheel|LicensePlate|Default Take|Layer0|RR_Wheel|Lic
+  - first:
+      74: -1146318831068604467
+    second: Body.002|RR_Wheel|RR_Wheel|LightGlass|Default Take|Layer0|RR_Wheel|Light
+  - first:
+      74: 5069301815742938312
+    second: Body.002|RR_Wheel|RR_Wheel|Right_Deflector|Default Take|Layer0|RR_Wheel|
+  - first:
+      74: -3481752390048602287
+    second: Body.002|RR_Wheel|RR_Wheel|Right_Door_Window|Default Take|Layer0|RR_Whee
+  - first:
+      74: 8963683826071064549
+    second: Body.002|RR_Wheel|RR_Wheel|Right_Door|Default Take|Layer0|RR_Wheel|Right
+  - first:
+      74: -3842471542615674783
+    second: Body.002|RR_Wheel|RR_Wheel|RL_Wheel|Default Take|Layer0|RR_Wheel|RL_Whee
+  - first:
+      74: 4274698594523231147
+    second: Body.002|RR_Wheel|RR_Wheel|RR_Wheel|Default Take|Layer0|RR_Wheel|RR_Whee
+  - first:
+      74: 8277403125932912265
+    second: Body.002|RR_Wheel|RR_Wheel|Wipers|Default Take|Layer0|RR_Wheel|Wipers|De
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
