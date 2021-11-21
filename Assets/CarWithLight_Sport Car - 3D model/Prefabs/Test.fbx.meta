@@ -1,0 +1,648 @@
+fileFormatVersion: 2
+guid: e712b1dedf28f944fb6074baeb3d036a
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1803383661958208938
+    second: RL_Wheel|Body_Windows|Default Take|Layer0
+  - first:
+      74: 4017473168341196129
+    second: RL_Wheel|Body|Default Take|Layer0
+  - first:
+      74: -2868332125654985133
+    second: RL_Wheel|Body|Default Take|Layer0.001
+  - first:
+      74: -8989588564859178220
+    second: RL_Wheel|Body|Default Take|Layer0.002
+  - first:
+      74: 8788835276837507833
+    second: RL_Wheel|Body|Default Take|Layer0.003
+  - first:
+      74: -3176649452126518636
+    second: RL_Wheel|Body|Default Take|Layer0.004
+  - first:
+      74: 4255849684247245339
+    second: RL_Wheel|Body|Default Take|Layer0.005
+  - first:
+      74: -8189898150969156203
+    second: RL_Wheel|Body|Default Take|Layer0.006
+  - first:
+      74: 1114042138607823964
+    second: RL_Wheel|Collider|Default Take|Layer0
+  - first:
+      74: 1583976726944589469
+    second: RL_Wheel|Engine_Hood_Glass|Default Take|Layer0
+  - first:
+      74: 8366479658407093692
+    second: RL_Wheel|Engine_Hood|Default Take|Layer0
+  - first:
+      74: 1197608164212392290
+    second: RL_Wheel|FL_Wheel|Default Take|Layer0
+  - first:
+      74: 1545507543758420004
+    second: RL_Wheel|FR_Wheel|Default Take|Layer0
+  - first:
+      74: 1320797090784330595
+    second: RL_Wheel|Front_Hood|Default Take|Layer0
+  - first:
+      74: -7120762329074670642
+    second: RL_Wheel|Grid|Default Take|Layer0
+  - first:
+      74: 7022460440919328183
+    second: RL_Wheel|Left_Deflector|Default Take|Layer0
+  - first:
+      74: 3809711133376364674
+    second: RL_Wheel|Left_Door_Window|Default Take|Layer0
+  - first:
+      74: 4098561545156608252
+    second: RL_Wheel|Left_Door|Default Take|Layer0
+  - first:
+      74: -3979968977094849914
+    second: RL_Wheel|LicensePlate|Default Take|Layer0
+  - first:
+      74: 4515459294616162267
+    second: RL_Wheel|LightGlass|Default Take|Layer0
+  - first:
+      74: -6627558541052183687
+    second: RL_Wheel|Right_Deflector|Default Take|Layer0
+  - first:
+      74: 8619763320616544070
+    second: RL_Wheel|Right_Door_Window|Default Take|Layer0
+  - first:
+      74: 6029763079236514623
+    second: RL_Wheel|Right_Door|Default Take|Layer0
+  - first:
+      74: -1684130385157037767
+    second: RL_Wheel|RL_Wheel|Default Take|Layer0
+  - first:
+      74: 6761503985964391617
+    second: RL_Wheel|RR_Wheel|Default Take|Layer0
+  - first:
+      74: -6514593853345956679
+    second: RL_Wheel|Wipers|Default Take|Layer0
+  - first:
+      74: -3896096919401755199
+    second: RR_Wheel|Body_Windows|Default Take|Layer0
+  - first:
+      74: -2281381385685990211
+    second: RR_Wheel|Body|Default Take|Layer0
+  - first:
+      74: -1331996739530908788
+    second: RR_Wheel|Body|Default Take|Layer0.001
+  - first:
+      74: 4641563676010869788
+    second: RR_Wheel|Body|Default Take|Layer0.002
+  - first:
+      74: 1673674631287168095
+    second: RR_Wheel|Body|Default Take|Layer0.003
+  - first:
+      74: -4499704686044205642
+    second: RR_Wheel|Body|Default Take|Layer0.004
+  - first:
+      74: 4423986359124541917
+    second: RR_Wheel|Body|Default Take|Layer0.005
+  - first:
+      74: -883308003087331186
+    second: RR_Wheel|Body|Default Take|Layer0.006
+  - first:
+      74: -7817734404695377451
+    second: RR_Wheel|Collider|Default Take|Layer0
+  - first:
+      74: -5290356880137908757
+    second: RR_Wheel|Engine_Hood_Glass|Default Take|Layer0
+  - first:
+      74: 1518103453306220302
+    second: RR_Wheel|Engine_Hood|Default Take|Layer0
+  - first:
+      74: -232665662377619711
+    second: RR_Wheel|FL_Wheel|Default Take|Layer0
+  - first:
+      74: -6461840439963573039
+    second: RR_Wheel|FR_Wheel|Default Take|Layer0
+  - first:
+      74: -5342784454632725082
+    second: RR_Wheel|Front_Hood|Default Take|Layer0
+  - first:
+      74: -954504782378924118
+    second: RR_Wheel|Grid|Default Take|Layer0
+  - first:
+      74: 2224523802720491619
+    second: RR_Wheel|Left_Deflector|Default Take|Layer0
+  - first:
+      74: 1048714384490595516
+    second: RR_Wheel|Left_Door_Window|Default Take|Layer0
+  - first:
+      74: -3569345705174754300
+    second: RR_Wheel|Left_Door|Default Take|Layer0
+  - first:
+      74: -4564402026177664639
+    second: RR_Wheel|LicensePlate|Default Take|Layer0
+  - first:
+      74: 5962472397908897593
+    second: RR_Wheel|LightGlass|Default Take|Layer0
+  - first:
+      74: 6839528986528181518
+    second: RR_Wheel|Right_Deflector|Default Take|Layer0
+  - first:
+      74: -6043469461988863256
+    second: RR_Wheel|Right_Door_Window|Default Take|Layer0
+  - first:
+      74: -5162522568663515023
+    second: RR_Wheel|Right_Door|Default Take|Layer0
+  - first:
+      74: 121509500912828681
+    second: RR_Wheel|RL_Wheel|Default Take|Layer0
+  - first:
+      74: -2884366081021195400
+    second: RR_Wheel|RR_Wheel|Default Take|Layer0
+  - first:
+      74: -2419577309740131367
+    second: RR_Wheel|Wipers|Default Take|Layer0
+  - first:
+      74: -6591547155267285689
+    second: FL_Wheel|Body_Windows|Default Take|Layer0
+  - first:
+      74: -1955975047701919865
+    second: FL_Wheel|Body|Default Take|Layer0
+  - first:
+      74: -8276391340874668093
+    second: FL_Wheel|Body|Default Take|Layer0.001
+  - first:
+      74: 3395590312231710081
+    second: FL_Wheel|Body|Default Take|Layer0.002
+  - first:
+      74: 7572769948156840564
+    second: FL_Wheel|Body|Default Take|Layer0.003
+  - first:
+      74: 4946770293240092844
+    second: FL_Wheel|Body|Default Take|Layer0.004
+  - first:
+      74: -2946185800310981458
+    second: FL_Wheel|Body|Default Take|Layer0.005
+  - first:
+      74: 6182587322100501140
+    second: FL_Wheel|Body|Default Take|Layer0.006
+  - first:
+      74: -7841545335259122220
+    second: FL_Wheel|Collider|Default Take|Layer0
+  - first:
+      74: -6362668618237012118
+    second: FL_Wheel|Engine_Hood_Glass|Default Take|Layer0
+  - first:
+      74: -2618307442289954123
+    second: FL_Wheel|Engine_Hood|Default Take|Layer0
+  - first:
+      74: 3606710985766974978
+    second: FL_Wheel|FL_Wheel|Default Take|Layer0
+  - first:
+      74: 2347654379637989862
+    second: FL_Wheel|FR_Wheel|Default Take|Layer0
+  - first:
+      74: -4022352342865892736
+    second: FL_Wheel|Front_Hood|Default Take|Layer0
+  - first:
+      74: -4513413027824597138
+    second: FL_Wheel|Grid|Default Take|Layer0
+  - first:
+      74: -6192738472247477683
+    second: FL_Wheel|Left_Deflector|Default Take|Layer0
+  - first:
+      74: -5035804165885957600
+    second: FL_Wheel|Left_Door_Window|Default Take|Layer0
+  - first:
+      74: 6079670309182067828
+    second: FL_Wheel|Left_Door|Default Take|Layer0
+  - first:
+      74: -1856481075911960728
+    second: FL_Wheel|LicensePlate|Default Take|Layer0
+  - first:
+      74: -2060838389219168003
+    second: FL_Wheel|LightGlass|Default Take|Layer0
+  - first:
+      74: 5384240617117399726
+    second: FL_Wheel|Right_Deflector|Default Take|Layer0
+  - first:
+      74: 841322975819542661
+    second: FL_Wheel|Right_Door_Window|Default Take|Layer0
+  - first:
+      74: 8391182070451517394
+    second: FL_Wheel|Right_Door|Default Take|Layer0
+  - first:
+      74: -7340843141754282624
+    second: FL_Wheel|RL_Wheel|Default Take|Layer0
+  - first:
+      74: 1472245312049155680
+    second: FL_Wheel|RR_Wheel|Default Take|Layer0
+  - first:
+      74: 7133076432565165485
+    second: FL_Wheel|Wipers|Default Take|Layer0
+  - first:
+      74: 3322491542692642518
+    second: FR_Wheel|Body_Windows|Default Take|Layer0
+  - first:
+      74: -8590095974123691142
+    second: FR_Wheel|Body|Default Take|Layer0
+  - first:
+      74: -6738220472311353120
+    second: FR_Wheel|Body|Default Take|Layer0.001
+  - first:
+      74: -7049197357461121416
+    second: FR_Wheel|Body|Default Take|Layer0.002
+  - first:
+      74: 2067937543020411475
+    second: FR_Wheel|Body|Default Take|Layer0.003
+  - first:
+      74: -8000382058264788079
+    second: FR_Wheel|Body|Default Take|Layer0.004
+  - first:
+      74: -3164726389333145241
+    second: FR_Wheel|Body|Default Take|Layer0.005
+  - first:
+      74: 5412809543286576602
+    second: FR_Wheel|Body|Default Take|Layer0.006
+  - first:
+      74: -5986586833632945960
+    second: FR_Wheel|Collider|Default Take|Layer0
+  - first:
+      74: -2767652712188030660
+    second: FR_Wheel|Engine_Hood_Glass|Default Take|Layer0
+  - first:
+      74: 176489562737600675
+    second: FR_Wheel|Engine_Hood|Default Take|Layer0
+  - first:
+      74: 9136946824939815805
+    second: FR_Wheel|FL_Wheel|Default Take|Layer0
+  - first:
+      74: 5840318051562588321
+    second: FR_Wheel|FR_Wheel|Default Take|Layer0
+  - first:
+      74: 3364784731750676239
+    second: FR_Wheel|Front_Hood|Default Take|Layer0
+  - first:
+      74: -4682713807347188867
+    second: FR_Wheel|Grid|Default Take|Layer0
+  - first:
+      74: 640803618868570868
+    second: FR_Wheel|Left_Deflector|Default Take|Layer0
+  - first:
+      74: 4579699519233732980
+    second: FR_Wheel|Left_Door_Window|Default Take|Layer0
+  - first:
+      74: -8610595350728900211
+    second: FR_Wheel|Left_Door|Default Take|Layer0
+  - first:
+      74: 4047573272152035822
+    second: FR_Wheel|LicensePlate|Default Take|Layer0
+  - first:
+      74: -6650165989141199862
+    second: FR_Wheel|LightGlass|Default Take|Layer0
+  - first:
+      74: 89245587183639677
+    second: FR_Wheel|Right_Deflector|Default Take|Layer0
+  - first:
+      74: 5228995675379214447
+    second: FR_Wheel|Right_Door_Window|Default Take|Layer0
+  - first:
+      74: -858230630584505224
+    second: FR_Wheel|Right_Door|Default Take|Layer0
+  - first:
+      74: 7649531335156570042
+    second: FR_Wheel|RL_Wheel|Default Take|Layer0
+  - first:
+      74: 8330501004851457917
+    second: FR_Wheel|RR_Wheel|Default Take|Layer0
+  - first:
+      74: -7879702878889703908
+    second: FR_Wheel|Wipers|Default Take|Layer0
+  - first:
+      74: -6782284586338990845
+    second: Body|Body_Windows|Default Take|Layer0
+  - first:
+      74: 2431132383454803125
+    second: Body|Body|Default Take|Layer0
+  - first:
+      74: -1705148545605274170
+    second: Body|Body|Default Take|Layer0.001
+  - first:
+      74: 2013254531463593018
+    second: Body|Body|Default Take|Layer0.002
+  - first:
+      74: -1121624321354670404
+    second: Body|Body|Default Take|Layer0.003
+  - first:
+      74: -8301810370650582724
+    second: Body|Body|Default Take|Layer0.004
+  - first:
+      74: 1668381978788370099
+    second: Body|Body|Default Take|Layer0.005
+  - first:
+      74: -63888609863545348
+    second: Body|Body|Default Take|Layer0.006
+  - first:
+      74: -3142363980608821522
+    second: Body|Collider|Default Take|Layer0
+  - first:
+      74: -6707028165595141222
+    second: Body|Engine_Hood_Glass|Default Take|Layer0
+  - first:
+      74: -8420794117140071043
+    second: Body|Engine_Hood|Default Take|Layer0
+  - first:
+      74: -4211613534261809283
+    second: Body|FL_Wheel|Default Take|Layer0
+  - first:
+      74: 6328313366624269794
+    second: Body|FR_Wheel|Default Take|Layer0
+  - first:
+      74: 8518609834257418034
+    second: Body|Front_Hood|Default Take|Layer0
+  - first:
+      74: 1557733747823387463
+    second: Body|Grid|Default Take|Layer0
+  - first:
+      74: -4101966961868587198
+    second: Body|Left_Deflector|Default Take|Layer0
+  - first:
+      74: 4937974511118088819
+    second: Body|Left_Door_Window|Default Take|Layer0
+  - first:
+      74: 3875505975906961937
+    second: Body|Left_Door|Default Take|Layer0
+  - first:
+      74: -420958559692494440
+    second: Body|LicensePlate|Default Take|Layer0
+  - first:
+      74: 7317980787907381869
+    second: Body|LightGlass|Default Take|Layer0
+  - first:
+      74: 9129136879833191345
+    second: Body|Right_Deflector|Default Take|Layer0
+  - first:
+      74: -5044068711097806892
+    second: Body|Right_Door_Window|Default Take|Layer0
+  - first:
+      74: 8893152990278227438
+    second: Body|Right_Door|Default Take|Layer0
+  - first:
+      74: -1159993217570027743
+    second: Body|RL_Wheel|Default Take|Layer0
+  - first:
+      74: -6965051449918488200
+    second: Body|RR_Wheel|Default Take|Layer0
+  - first:
+      74: -7333009285025460800
+    second: Body|Wipers|Default Take|Layer0
+  - first:
+      74: -8784929863161235254
+    second: Body.001|Body_Windows|Default Take|Layer0
+  - first:
+      74: -9062460537821649609
+    second: Body.001|Body|Default Take|Layer0
+  - first:
+      74: 1251986895070910138
+    second: Body.001|Body|Default Take|Layer0.001
+  - first:
+      74: -1756950102387968845
+    second: Body.001|Body|Default Take|Layer0.002
+  - first:
+      74: 5604012111401321219
+    second: Body.001|Body|Default Take|Layer0.003
+  - first:
+      74: 4690430258318012279
+    second: Body.001|Body|Default Take|Layer0.004
+  - first:
+      74: 1953465961423871352
+    second: Body.001|Body|Default Take|Layer0.005
+  - first:
+      74: 7821669793790804234
+    second: Body.001|Body|Default Take|Layer0.006
+  - first:
+      74: -6504186896159335627
+    second: Body.001|Collider|Default Take|Layer0
+  - first:
+      74: 3494983878441512110
+    second: Body.001|Engine_Hood_Glass|Default Take|Layer0
+  - first:
+      74: -6866717377747296601
+    second: Body.001|Engine_Hood|Default Take|Layer0
+  - first:
+      74: -2120928536017419738
+    second: Body.001|FL_Wheel|Default Take|Layer0
+  - first:
+      74: -1427151700399182208
+    second: Body.001|FR_Wheel|Default Take|Layer0
+  - first:
+      74: -676144063090516898
+    second: Body.001|Front_Hood|Default Take|Layer0
+  - first:
+      74: -994956845340608928
+    second: Body.001|Grid|Default Take|Layer0
+  - first:
+      74: -6954221867497308374
+    second: Body.001|Left_Deflector|Default Take|Layer0
+  - first:
+      74: -2344375871549972034
+    second: Body.001|Left_Door_Window|Default Take|Layer0
+  - first:
+      74: -6984589729071728214
+    second: Body.001|Left_Door|Default Take|Layer0
+  - first:
+      74: -7658420404218045554
+    second: Body.001|LicensePlate|Default Take|Layer0
+  - first:
+      74: 7248645621430144376
+    second: Body.001|LightGlass|Default Take|Layer0
+  - first:
+      74: 6703774090793601807
+    second: Body.001|Right_Deflector|Default Take|Layer0
+  - first:
+      74: 1139863466602300352
+    second: Body.001|Right_Door_Window|Default Take|Layer0
+  - first:
+      74: -777423309230754836
+    second: Body.001|Right_Door|Default Take|Layer0
+  - first:
+      74: 1141201464961909530
+    second: Body.001|RL_Wheel|Default Take|Layer0
+  - first:
+      74: -6589173430449484480
+    second: Body.001|RR_Wheel|Default Take|Layer0
+  - first:
+      74: 4313093001056366590
+    second: Body.001|Wipers|Default Take|Layer0
+  - first:
+      74: 1606381453134854088
+    second: Body.002|Body_Windows|Default Take|Layer0
+  - first:
+      74: -3328806440621832677
+    second: Body.002|Body|Default Take|Layer0
+  - first:
+      74: 4223692947646058143
+    second: Body.002|Body|Default Take|Layer0.001
+  - first:
+      74: -8996722158370668086
+    second: Body.002|Body|Default Take|Layer0.002
+  - first:
+      74: -7945677905766648326
+    second: Body.002|Body|Default Take|Layer0.003
+  - first:
+      74: -8741030890711169682
+    second: Body.002|Body|Default Take|Layer0.004
+  - first:
+      74: 6397328572121242000
+    second: Body.002|Body|Default Take|Layer0.005
+  - first:
+      74: 1890372786797340644
+    second: Body.002|Body|Default Take|Layer0.006
+  - first:
+      74: 3141831238614666897
+    second: Body.002|Collider|Default Take|Layer0
+  - first:
+      74: -5612392127886169490
+    second: Body.002|Engine_Hood_Glass|Default Take|Layer0
+  - first:
+      74: 5148745666364283675
+    second: Body.002|Engine_Hood|Default Take|Layer0
+  - first:
+      74: -7284450093622511256
+    second: Body.002|FL_Wheel|Default Take|Layer0
+  - first:
+      74: -2962774232515229185
+    second: Body.002|FR_Wheel|Default Take|Layer0
+  - first:
+      74: 3719308958361831985
+    second: Body.002|Front_Hood|Default Take|Layer0
+  - first:
+      74: 1636695280201998796
+    second: Body.002|Grid|Default Take|Layer0
+  - first:
+      74: 871715190911447281
+    second: Body.002|Left_Deflector|Default Take|Layer0
+  - first:
+      74: 2114315562284357148
+    second: Body.002|Left_Door_Window|Default Take|Layer0
+  - first:
+      74: -4895320228830200384
+    second: Body.002|Left_Door|Default Take|Layer0
+  - first:
+      74: -5264234977705935611
+    second: Body.002|LicensePlate|Default Take|Layer0
+  - first:
+      74: 5417728970302822366
+    second: Body.002|LightGlass|Default Take|Layer0
+  - first:
+      74: 8573733612920176601
+    second: Body.002|Right_Deflector|Default Take|Layer0
+  - first:
+      74: 6247020903986133319
+    second: Body.002|Right_Door_Window|Default Take|Layer0
+  - first:
+      74: 5058681903851154034
+    second: Body.002|Right_Door|Default Take|Layer0
+  - first:
+      74: 8353685321117475110
+    second: Body.002|RL_Wheel|Default Take|Layer0
+  - first:
+      74: 8126192104509135247
+    second: Body.002|RR_Wheel|Default Take|Layer0
+  - first:
+      74: -3020245492262011852
+    second: Body.002|Wipers|Default Take|Layer0
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

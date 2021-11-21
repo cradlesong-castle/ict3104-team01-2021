@@ -51,14 +51,16 @@ public class SceneController : MonoBehaviour
     [Header("Car Customization")]
     public GameObject selectedCar;
     public Material selectedPaint;
+    public GameObject carNormal;
     public GameObject carA;
     public GameObject carB;
     public GameObject carC;
+    public Material carNormalMat;
     public Material carAMat;
     public Material carBMat;
     public Material carCMat;
     private bool isDriverless = false;
-    public int avLabel = 0;
+    // public int avLabel = 0;
     public GameObject previewCar;
     public Transform previewCarLocation;
 
@@ -117,23 +119,29 @@ public class SceneController : MonoBehaviour
 
     /* 
      * These control the visual aspects of the cars */
+    public void SwitchCarNormal()
+    {
+        selectedCar = carNormal;
+        WriteToCSV("Event", "Vehicle Appearance", "Normal Car set");
+        UpdatePreview();
+    }
     public void SwitchCarA()
     {
         selectedCar = carA;
-        WriteToCSV("Event", "Vehicle Appearance", "Car A set");
+        WriteToCSV("Event", "Vehicle Appearance", "AV Car A set");
         UpdatePreview();
     }
     public void SwitchCarB()
     {
         selectedCar = carB;
-        WriteToCSV("Event", "Vehicle Appearance", "Car B set");
+        WriteToCSV("Event", "Vehicle Appearance", "AV Car B set");
         UpdatePreview();
 
     }
     public void SwitchCarC()
     {
         selectedCar = carC;
-        WriteToCSV("Event", "Vehicle Appearance", "Car C set");
+        WriteToCSV("Event", "Vehicle Appearance", "AV Car C set");
         UpdatePreview();
     }
     public void ChangeDriverVisibility()
@@ -158,43 +166,43 @@ public class SceneController : MonoBehaviour
         }
         UpdatePreview();
     }
-    public void ChangeAvVisibility()
-    {
-        if (avLabel == 0)
-        {
-            // Switch to Black (from none)
-            avText.text = "Black";
-            WriteToCSV("Event", "Vehicle Appearance", "AV label black set");
-            carA.transform.Find("avBlack").gameObject.SetActive(true);
-            carB.transform.Find("avBlack").gameObject.SetActive(true);
-            carC.transform.Find("avBlack").gameObject.SetActive(true);
-            avLabel = 1;
-        }
-        else if (avLabel == 1)
-        {
-            // Switch to White (from Black)
-            avText.text = "White";
-            WriteToCSV("Event", "Vehicle Appearance", "AV label white set");
-            carA.transform.Find("avWhite").gameObject.SetActive(true);
-            carB.transform.Find("avWhite").gameObject.SetActive(true);
-            carC.transform.Find("avWhite").gameObject.SetActive(true);
-            carA.transform.Find("avBlack").gameObject.SetActive(false);
-            carB.transform.Find("avBlack").gameObject.SetActive(false);
-            carC.transform.Find("avBlack").gameObject.SetActive(false);
-            avLabel = 2;
-        }
-        else if (avLabel == 2)
-        {
-            // Switch to White (from White)
-            avText.text = "Not Visible";
-            WriteToCSV("Event", "Vehicle Appearance", "AV label non-visible set");
-            carA.transform.Find("avWhite").gameObject.SetActive(false);
-            carB.transform.Find("avWhite").gameObject.SetActive(false);
-            carC.transform.Find("avWhite").gameObject.SetActive(false);
-            avLabel = 0;
-        }
-        UpdatePreview();
-    }
+    //public void ChangeAvVisibility()
+    //{
+    //    if (avLabel == 0)
+    //    {
+    //        // Switch to Black (from none)
+    //        avText.text = "Black";
+    //        WriteToCSV("Event", "Vehicle Appearance", "AV label black set");
+    //        carA.transform.Find("avBlack").gameObject.SetActive(true);
+    //        carB.transform.Find("avBlack").gameObject.SetActive(true);
+    //        carC.transform.Find("avBlack").gameObject.SetActive(true);
+    //        avLabel = 1;
+    //    }
+    //    else if (avLabel == 1)
+    //    {
+    //        // Switch to White (from Black)
+    //        avText.text = "White";
+    //        WriteToCSV("Event", "Vehicle Appearance", "AV label white set");
+    //        carA.transform.Find("avWhite").gameObject.SetActive(true);
+    //        carB.transform.Find("avWhite").gameObject.SetActive(true);
+    //        carC.transform.Find("avWhite").gameObject.SetActive(true);
+    //        carA.transform.Find("avBlack").gameObject.SetActive(false);
+    //        carB.transform.Find("avBlack").gameObject.SetActive(false);
+    //        carC.transform.Find("avBlack").gameObject.SetActive(false);
+    //        avLabel = 2;
+    //    }
+    //    else if (avLabel == 2)
+    //    {
+    //        // Switch to White (from White)
+    //        avText.text = "Not Visible";
+    //        WriteToCSV("Event", "Vehicle Appearance", "AV label non-visible set");
+    //        carA.transform.Find("avWhite").gameObject.SetActive(false);
+    //        carB.transform.Find("avWhite").gameObject.SetActive(false);
+    //        carC.transform.Find("avWhite").gameObject.SetActive(false);
+    //        avLabel = 0;
+    //    }
+    //    UpdatePreview();
+    //}
 
     private void UpdatePreview()
     {
