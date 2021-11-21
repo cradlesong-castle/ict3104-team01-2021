@@ -205,6 +205,11 @@ public class SceneController : MonoBehaviour
         previewCar = Instantiate(selectedCar, previewCarLocation);
         previewCar.transform.localPosition = new Vector3(0, 0, 0);
         previewCar.name = "PreviewCar";
+        previewCar.layer = LayerMask.NameToLayer("UI");
+        foreach (Transform child in previewCar.GetComponentsInChildren<Transform>())
+        {
+            child.gameObject.layer = LayerMask.NameToLayer("UI");
+        }
     }
 
 
