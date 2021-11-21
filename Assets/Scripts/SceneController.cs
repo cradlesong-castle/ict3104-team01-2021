@@ -9,11 +9,12 @@ public class SceneController : MonoBehaviour
 
     public GameObject startingText;
     public Text driverText;
-    public Text avText;
+    public Text dayNightText;
 
     [Header("WeatherControls")]
     public bool isDay;
     public Light environmentLight;
+    public GameObject[] streetLights;
 
     [Header("Waypoints")]  /*
        * List of routes
@@ -163,6 +164,63 @@ public class SceneController : MonoBehaviour
             carA.transform.Find("Driver").gameObject.SetActive(true);
             carB.transform.Find("Driver").gameObject.SetActive(true);
             carC.transform.Find("Driver").gameObject.SetActive(true);
+        }
+        UpdatePreview();
+    }
+
+    public void ChangeDayNight()
+    {
+        GameObject temp_light;
+        if (!isDay)
+        {
+            isDay = true;
+            dayNightText.text = "Day";
+            environmentLight.color = new Color(1f, 0.95f, 0.83f);
+            foreach (var streetLamp in streetLights)
+            {
+                foreach (var light in streetLamp.GetComponentsInChildren<Transform>())
+                {
+                    //Debug.Log("1 " + light);
+                    //Debug.Log("2 " + light.GetChild(0));
+                    //Debug.Log("3 " + light.GetChild(0).GetChild(0).gameObject);
+                    if (light.name == "Street Lamp")
+                    {
+                        light.GetChild(0).gameObject.SetActive(false);
+
+                    }
+                    //temp_light = light.transform.Find("light").gameObject;
+                    //if(temp_light.name != null)
+                    //{
+                    //    temp_light.gameObject.SetActive(false);
+                    //}
+                }
+            }
+            carNormal.GetComponent<CarController>().frontLights.SetActive(false);
+            carA.GetComponent<CarController>().frontLights.SetActive(false);
+            carB.GetComponent<CarController>().frontLights.SetActive(false);
+            carC.GetComponent<CarController>().frontLights.SetActive(false);
+            WriteToCSV("Event", "Weather", "Day set. Street lights off. ");
+        }
+        else
+        {
+            isDay = false;
+            dayNightText.text = "Night";
+            environmentLight.color = new Color(0.07f, 0, 0.24f);
+            foreach (var streetLamp in streetLights)
+            {
+                foreach (var light in streetLamp.GetComponentsInChildren<Transform>()) {
+                    if (light.name == "Street Lamp")
+                    {
+                        light.GetChild(0).gameObject.SetActive(true);
+
+                    }
+                }
+            }
+            carNormal.GetComponent<CarController>().frontLights.SetActive(true);
+            carA.GetComponent<CarController>().frontLights.SetActive(true);
+            carB.GetComponent<CarController>().frontLights.SetActive(true);
+            carC.GetComponent<CarController>().frontLights.SetActive(true);
+            WriteToCSV("Event", "Weather", "Night set. Street lights on. ");
         }
         UpdatePreview();
     }
