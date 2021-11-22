@@ -11,6 +11,7 @@ public class CarController : MonoBehaviour
     private float turningSpeed;
     public float movementSpeed = 5;
     public float rotationSpeed = 120;
+    private float invisRotationSpeed = 0;
     public float stopDistance = 2f;
     public Vector3 destination;
     public bool reachedDestination;
@@ -26,6 +27,7 @@ public class CarController : MonoBehaviour
     public bool isTurningLeft;
     public bool isTurningRight;
     public bool isDecelerating;
+
     //public bool isPedNear;
     //public bool isCrossingForward;
     //public string crossingType;
@@ -155,7 +157,21 @@ public class CarController : MonoBehaviour
             {
                 reachedDestination = false;
                 Quaternion targetRotation = Quaternion.LookRotation(destinationDirection);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+                if (transform.rotation != targetRotation)
+                {
+                    if (invisRotationSpeed < rotationSpeed)
+                    {
+                        invisRotationSpeed += Time.deltaTime * rotationSpeed;
+                    }
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, invisRotationSpeed * Time.deltaTime);
+                }
+                else
+                {
+                    if (invisRotationSpeed > 0)
+                    {
+                        invisRotationSpeed -= Time.deltaTime * rotationSpeed;
+                    }
+                }
                 transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
             }
             else

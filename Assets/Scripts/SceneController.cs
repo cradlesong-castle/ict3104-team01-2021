@@ -45,9 +45,15 @@ public class SceneController : MonoBehaviour
     [Header("Crossings")]
     public GameObject[] crossingTrafficLight;
     public GameObject[] crossingZebra;
+    private bool isTraffic = false;
     [Header("Direction Arrows")]
     public GameObject[] arrowsUni;
     public GameObject[] arrowsBi;
+    private bool isBi = false;
+
+    [Header("Traffic Control")]
+    public GameObject[] trafficButtons;
+    public GameObject[] trafficLights;
 
     [Header("Car Customization")]
     public GameObject selectedCar;
@@ -91,6 +97,96 @@ public class SceneController : MonoBehaviour
         WriteToCSV("Event", "Road Direction", "Uni-direction roads set");
         WriteToCSV("Event", "Crossing", "Zebra Crossing set");
         WriteToCSV("Event", "Vehicle Appearance", "Normal Car set");
+        UpdateTrafficLightVisibility();
+    }
+
+    /*
+     * This controls presence of traffic lights
+     */
+    void UpdateTrafficLightVisibility()
+    {
+        if (isTraffic == true)
+        {
+            trafficLights[2].transform.position = new Vector3(-1.44f, 3.38f, 15.57f);
+
+            if (isBi == false && intersectionNone.activeSelf == true)
+            {
+                trafficButtons[0].SetActive(true);
+                trafficButtons[1].SetActive(false);
+                trafficButtons[2].SetActive(false);
+                trafficButtons[3].SetActive(false);
+                trafficLights[0].SetActive(true);
+                trafficLights[1].SetActive(false);
+                trafficLights[2].SetActive(false);
+                trafficLights[3].SetActive(false);
+            }
+            else if (isBi == true && intersectionNone.activeSelf == true)
+            {
+                trafficButtons[0].SetActive(true);
+                trafficButtons[1].SetActive(false);
+                trafficButtons[2].SetActive(true);
+                trafficButtons[3].SetActive(false);
+                trafficLights[0].SetActive(true);
+                trafficLights[1].SetActive(false);
+                trafficLights[2].SetActive(true);
+                trafficLights[3].SetActive(false);
+                trafficLights[2].transform.position = new Vector3(-1.44f, 3.38f, 5.7f);
+            }
+            else if (isBi == false && intersectionT.activeSelf == true)
+            {
+                trafficButtons[0].SetActive(true);
+                trafficButtons[1].SetActive(true);
+                trafficButtons[2].SetActive(false);
+                trafficButtons[3].SetActive(false);
+                trafficLights[0].SetActive(true);
+                trafficLights[1].SetActive(true);
+                trafficLights[2].SetActive(false);
+                trafficLights[3].SetActive(false);
+            }
+            else if (isBi == true && intersectionT.activeSelf == true)
+            {
+                trafficButtons[0].SetActive(true);
+                trafficButtons[1].SetActive(true);
+                trafficButtons[2].SetActive(true);
+                trafficButtons[3].SetActive(false);
+                trafficLights[0].SetActive(true);                trafficLights[1].SetActive(true);
+                trafficLights[2].SetActive(true);
+                trafficLights[3].SetActive(false);
+            }
+            else if (isBi == false && intersectionX.activeSelf == true)
+            {
+                trafficButtons[0].SetActive(true);
+                trafficButtons[1].SetActive(true);
+                trafficButtons[2].SetActive(false);
+                trafficButtons[3].SetActive(false);
+                trafficLights[0].SetActive(true);
+                trafficLights[1].SetActive(true);
+                trafficLights[2].SetActive(false);
+                trafficLights[3].SetActive(false);
+            }
+            else if (isBi == true && intersectionX.activeSelf == true)
+            {
+                trafficButtons[0].SetActive(true);
+                trafficButtons[1].SetActive(true);
+                trafficButtons[2].SetActive(true);
+                trafficButtons[3].SetActive(true);
+                trafficLights[0].SetActive(true);
+                trafficLights[1].SetActive(true);
+                trafficLights[2].SetActive(true);
+                trafficLights[3].SetActive(true);
+            }
+        }
+        if (isTraffic == false)
+        {
+            trafficButtons[0].SetActive(false);
+            trafficButtons[1].SetActive(false);
+            trafficButtons[2].SetActive(false);
+            trafficButtons[3].SetActive(false);
+            trafficLights[0].SetActive(false);
+            trafficLights[1].SetActive(false);
+            trafficLights[2].SetActive(false);
+            trafficLights[3].SetActive(false);
+        }
     }
 
     /*
@@ -102,6 +198,7 @@ public class SceneController : MonoBehaviour
         intersectionNone.SetActive(true);
         intersectionT.SetActive(false);
         intersectionX.SetActive(false);
+        UpdateTrafficLightVisibility();
     }
     public void SwitchIntersectionT()
     {
@@ -109,6 +206,8 @@ public class SceneController : MonoBehaviour
         intersectionT.SetActive(true);
         intersectionNone.SetActive(false);
         intersectionX.SetActive(false);
+        UpdateTrafficLightVisibility();
+
     }
     public void SwitchIntersectionX()
     {
@@ -116,6 +215,8 @@ public class SceneController : MonoBehaviour
         intersectionX.SetActive(true);
         intersectionNone.SetActive(false);
         intersectionT.SetActive(false);
+        UpdateTrafficLightVisibility();
+
     }
 
     /* 
@@ -292,6 +393,9 @@ public class SceneController : MonoBehaviour
         {
             arrow.SetActive(false);
         }
+        isBi = false;
+        UpdateTrafficLightVisibility();
+
         WriteToCSV("Event", "Road Direction", "Uni-direction roads set");
     }
     public void SwitchDirectionBi()
@@ -304,6 +408,9 @@ public class SceneController : MonoBehaviour
         {
             arrow.SetActive(false);
         }
+        isBi = true;
+        UpdateTrafficLightVisibility();
+
         WriteToCSV("Event", "Road Direction", "Bi-direction roads set");
     }
 
@@ -320,6 +427,9 @@ public class SceneController : MonoBehaviour
         {
             tile.SetActive(false);
         }
+        isTraffic = true;
+        UpdateTrafficLightVisibility();
+
         WriteToCSV("Event", "Crossing", "Traffic Light set");
     }
     public void SwitchCrossingZebra()
@@ -332,6 +442,10 @@ public class SceneController : MonoBehaviour
         {
             tile.SetActive(false);
         }
+        isTraffic = false;
+
+        UpdateTrafficLightVisibility();
+
         WriteToCSV("Event", "Crossing", "Zebra Crossing set");
     }
 

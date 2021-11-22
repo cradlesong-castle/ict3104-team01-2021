@@ -32,7 +32,10 @@ public class WaypointNavigator : MonoBehaviour
                 controller.SetDestination(currentWaypoint.GetPosition());
                 if (currentWaypoint.nextWaypoint != null)
                 {
+                    //controller.prevRotationY = transform.rotation.eulerAngles.y;
+                    //controller.prevTransform = transform.position;
                     nextWaypoint = currentWaypoint.nextWaypoint;
+
                 }
                 if (currentWaypoint.name == "End")
                 {
