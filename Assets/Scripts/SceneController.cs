@@ -15,6 +15,8 @@ public class SceneController : MonoBehaviour
     public bool isDay;
     public Light environmentLight;
     public GameObject[] streetLights;
+    public Material dayBox;
+    public Material nightBox;
 
     [Header("Waypoints")]  /*
        * List of routes
@@ -149,7 +151,8 @@ public class SceneController : MonoBehaviour
                 trafficButtons[1].SetActive(true);
                 trafficButtons[2].SetActive(true);
                 trafficButtons[3].SetActive(false);
-                trafficLights[0].SetActive(true);                trafficLights[1].SetActive(true);
+                trafficLights[0].SetActive(true);
+                trafficLights[1].SetActive(true);
                 trafficLights[2].SetActive(true);
                 trafficLights[3].SetActive(false);
             }
@@ -253,6 +256,7 @@ public class SceneController : MonoBehaviour
             isDriverless = true;
             driverText.text = "Not Visible";
             WriteToCSV("Event", "Vehicle Appearance", "Driver not visible set");
+            carNormal.transform.Find("Driver").gameObject.SetActive(false);
             carA.transform.Find("Driver").gameObject.SetActive(false);
             carB.transform.Find("Driver").gameObject.SetActive(false);
             carC.transform.Find("Driver").gameObject.SetActive(false);
@@ -262,6 +266,7 @@ public class SceneController : MonoBehaviour
             isDriverless = false;
             driverText.text = "Visible";
             WriteToCSV("Event", "Vehicle Appearance", "Driver visible set");
+            carNormal.transform.Find("Driver").gameObject.SetActive(true);
             carA.transform.Find("Driver").gameObject.SetActive(true);
             carB.transform.Find("Driver").gameObject.SetActive(true);
             carC.transform.Find("Driver").gameObject.SetActive(true);
@@ -300,6 +305,7 @@ public class SceneController : MonoBehaviour
             carA.GetComponent<CarController>().frontLights.SetActive(false);
             carB.GetComponent<CarController>().frontLights.SetActive(false);
             carC.GetComponent<CarController>().frontLights.SetActive(false);
+            RenderSettings.skybox = dayBox;
             WriteToCSV("Event", "Weather", "Day set. Street lights off. ");
         }
         else
@@ -321,6 +327,8 @@ public class SceneController : MonoBehaviour
             carA.GetComponent<CarController>().frontLights.SetActive(true);
             carB.GetComponent<CarController>().frontLights.SetActive(true);
             carC.GetComponent<CarController>().frontLights.SetActive(true);
+            RenderSettings.skybox = nightBox;
+
             WriteToCSV("Event", "Weather", "Night set. Street lights on. ");
         }
         UpdatePreview();
